@@ -1,0 +1,774 @@
+[2015-04-10 00:04:34,435][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][22537][14997] duration [998ms], collections [1]/[1.4s], total [998ms]/[4.9m], memory [138.6mb]->[87.2mb]/[990.7mb], all_pools {[young] [51.3mb]->[310.7kb]/[266.2mb]}{[survivor] [6.5mb]->[5.6mb]/[33.2mb]}{[old] [80.7mb]->[81.3mb]/[691.2mb]}
+[2015-04-10 00:50:24,307][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 00:50:24,308][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:442)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:554)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 00:50:24,472][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 00:50:24,498][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:50:24,510][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:50:45,452][INFO ][twitter4j.TwitterStreamImpl] connect timed out
+[2015-04-10 00:50:45,491][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+connect timed out
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+[2015-04-10 00:50:45,533][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 00:50:45,533][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:50:45,571][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:51:05,631][INFO ][twitter4j.TwitterStreamImpl] connect timed out
+[2015-04-10 00:51:05,631][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+connect timed out
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+[2015-04-10 00:51:05,632][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 00:51:05,632][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:51:05,633][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:51:25,636][INFO ][twitter4j.TwitterStreamImpl] connect timed out
+[2015-04-10 00:51:25,637][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+connect timed out
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+[2015-04-10 00:51:25,652][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 00:51:25,652][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:51:25,653][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:51:45,657][INFO ][twitter4j.TwitterStreamImpl] connect timed out
+[2015-04-10 00:51:45,657][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+connect timed out
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+[2015-04-10 00:51:45,658][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 00:51:45,658][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:51:45,658][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:52:05,662][INFO ][twitter4j.TwitterStreamImpl] connect timed out
+[2015-04-10 00:52:05,662][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+connect timed out
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+[2015-04-10 00:52:05,663][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 00:52:05,663][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:52:05,663][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:52:30,819][INFO ][twitter4j.TwitterStreamImpl] 503:The Twitter servers are up, but overloaded with requests. Try again later.
+stream ashishawasthi04-statuses2115560542912962174 request Timedout.
+
+[2015-04-10 00:52:30,819][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+503:The Twitter servers are up, but overloaded with requests. Try again later.
+stream ashishawasthi04-statuses2115560542912962174 request Timedout.
+
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b434f
+TwitterException{exceptionCode=[4d13a6ae-827b434f], statusCode=503, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:163)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+[2015-04-10 00:52:31,819][INFO ][twitter4j.TwitterStreamImpl] Waiting for 10000 milliseconds
+[2015-04-10 00:52:31,819][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 00:52:31,820][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 00:52:32,757][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-10 00:52:32,758][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-10 01:13:10,818][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 01:13:10,818][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 01:13:10,819][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 01:13:10,819][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 01:13:10,820][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 01:13:11,586][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-10 01:13:11,591][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-10 01:42:38,606][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][28408][17635] duration [1.2s], collections [1]/[1.2s], total [1.2s]/[5.4m], memory [216.2mb]->[149.8mb]/[990.7mb], all_pools {[young] [68.2mb]->[435.5kb]/[266.2mb]}{[survivor] [3mb]->[4.4mb]/[33.2mb]}{[old] [144.9mb]->[144.9mb]/[691.2mb]}
+[2015-04-10 05:35:09,043][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][42330][24265] duration [2.2s], collections [1]/[2.7s], total [2.2s]/[6.6m], memory [165.3mb]->[100.2mb]/[990.7mb], all_pools {[young] [66.3mb]->[666.5kb]/[266.2mb]}{[survivor] [6.8mb]->[5.9mb]/[33.2mb]}{[old] [92.1mb]->[93.7mb]/[691.2mb]}
+[2015-04-10 08:10:38,197][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51638][29247] duration [1.3s], collections [1]/[1.7s], total [1.3s]/[7.5m], memory [207.5mb]->[144.2mb]/[990.7mb], all_pools {[young] [63.1mb]->[1.1mb]/[266.2mb]}{[survivor] [8.1mb]->[5.3mb]/[33.2mb]}{[old] [136.2mb]->[137.6mb]/[691.2mb]}
+[2015-04-10 08:10:44,822][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][51643][29249] duration [712ms], collections [1]/[1.1s], total [712ms]/[7.5m], memory [200.5mb]->[146.7mb]/[990.7mb], all_pools {[young] [56.1mb]->[844.2kb]/[266.2mb]}{[survivor] [6.7mb]->[6mb]/[33.2mb]}{[old] [137.6mb]->[139.8mb]/[691.2mb]}
+[2015-04-10 08:10:58,680][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51650][29251] duration [6.2s], collections [1]/[7.5s], total [6.2s]/[7.6m], memory [199.7mb]->[150.1mb]/[990.7mb], all_pools {[young] [51.8mb]->[306.3kb]/[266.2mb]}{[survivor] [7.9mb]->[6.9mb]/[33.2mb]}{[old] [139.8mb]->[142.9mb]/[691.2mb]}
+[2015-04-10 08:11:05,074][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51652][29252] duration [4.3s], collections [1]/[5.3s], total [4.3s]/[7.7m], memory [193.9mb]->[164.7mb]/[990.7mb], all_pools {[young] [44mb]->[12.6mb]/[266.2mb]}{[survivor] [6.9mb]->[8.5mb]/[33.2mb]}{[old] [142.9mb]->[143.6mb]/[691.2mb]}
+[2015-04-10 08:11:16,456][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51654][29253] duration [7.9s], collections [1]/[9.3s], total [7.9s]/[7.9m], memory [174.9mb]->[160.4mb]/[990.7mb], all_pools {[young] [22.8mb]->[5.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [143.6mb]->[146.6mb]/[691.2mb]}
+[2015-04-10 08:11:30,491][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51656][29254] duration [12.2s], collections [1]/[12.9s], total [12.2s]/[8.1m], memory [214.9mb]->[196.1mb]/[990.7mb], all_pools {[young] [59.8mb]->[37mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [146.6mb]->[150.5mb]/[691.2mb]}
+[2015-04-10 08:11:54,578][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51657][29255] duration [23.1s], collections [1]/[24s], total [23.1s]/[8.4m], memory [196.1mb]->[187.4mb]/[990.7mb], all_pools {[young] [37mb]->[17.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [150.5mb]->[161.5mb]/[691.2mb]}
+[2015-04-10 08:12:35,939][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51658][29256] duration [23.5s], collections [1]/[24.9s], total [23.5s]/[8.8m], memory [187.4mb]->[247.8mb]/[990.7mb], all_pools {[young] [17.3mb]->[68.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [161.5mb]->[170.9mb]/[691.2mb]}
+[2015-04-10 08:12:39,674][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][51659][29258] duration [16s], collections [2]/[17.4s], total [16s]/[9.1m], memory [247.8mb]->[260.9mb]/[990.7mb], all_pools {[young] [68.3mb]->[68.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [170.9mb]->[196.6mb]/[691.2mb]}
+[2015-04-10 08:24:24,425][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][52357][29713] duration [1.6s], collections [1]/[1.8s], total [1.6s]/[9.3m], memory [134.6mb]->[74.2mb]/[990.7mb], all_pools {[young] [59.6mb]->[320.1kb]/[266.2mb]}{[survivor] [8.3mb]->[6.3mb]/[33.2mb]}{[old] [66.6mb]->[67.5mb]/[691.2mb]}
+[2015-04-10 08:41:20,588][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][53368][30354] duration [1.2s], collections [1]/[1.9s], total [1.2s]/[9.4m], memory [168.2mb]->[142.2mb]/[990.7mb], all_pools {[young] [28.7mb]->[375.9kb]/[266.2mb]}{[survivor] [4.4mb]->[6.8mb]/[33.2mb]}{[old] [134.9mb]->[134.9mb]/[691.2mb]}
+[2015-04-10 08:56:55,367][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][54300][30980] duration [1.3s], collections [1]/[1.8s], total [1.3s]/[9.5m], memory [206.4mb]->[197.1mb]/[990.7mb], all_pools {[young] [10.3mb]->[503.3kb]/[266.2mb]}{[survivor] [8.5mb]->[5.5mb]/[33.2mb]}{[old] [187.5mb]->[191mb]/[691.2mb]}
+[2015-04-10 09:05:54,154][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][54836][31344] duration [2.1s], collections [2]/[2.5s], total [2.1s]/[9.6m], memory [225.2mb]->[193.8mb]/[990.7mb], all_pools {[young] [35mb]->[84.8kb]/[266.2mb]}{[survivor] [5.9mb]->[5.4mb]/[33.2mb]}{[old] [184.2mb]->[188.3mb]/[691.2mb]}
+[2015-04-10 09:31:33,633][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][56372][32450] duration [782ms], collections [1]/[1.4s], total [782ms]/[9.8m], memory [221.8mb]->[162.5mb]/[990.7mb], all_pools {[young] [66.5mb]->[6.3mb]/[266.2mb]}{[survivor] [4.8mb]->[5.4mb]/[33.2mb]}{[old] [150.4mb]->[150.7mb]/[691.2mb]}
+[2015-04-10 09:31:39,585][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][56377][32453] duration [917ms], collections [1]/[1s], total [917ms]/[9.9m], memory [183.4mb]->[169.6mb]/[990.7mb], all_pools {[young] [24.5mb]->[11.1mb]/[266.2mb]}{[survivor] [7.7mb]->[6.1mb]/[33.2mb]}{[old] [151.2mb]->[152.3mb]/[691.2mb]}
+[2015-04-10 09:31:48,826][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][56385][32459] duration [1.5s], collections [1]/[2.1s], total [1.5s]/[9.9m], memory [221.6mb]->[166.2mb]/[990.7mb], all_pools {[young] [58.7mb]->[1mb]/[266.2mb]}{[survivor] [6.8mb]->[7.5mb]/[33.2mb]}{[old] [156mb]->[157.6mb]/[691.2mb]}
+[2015-04-10 10:01:16,283][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][58145][33875] duration [1.1s], collections [1]/[1.3s], total [1.1s]/[10.3m], memory [136.5mb]->[132.4mb]/[990.7mb], all_pools {[young] [14mb]->[2.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [114mb]->[121mb]/[691.2mb]}
+[2015-04-10 10:20:21,719][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][59284][34780] duration [2s], collections [1]/[2.1s], total [2s]/[10.6m], memory [205.4mb]->[199.4mb]/[990.7mb], all_pools {[young] [29mb]->[18mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [167.9mb]->[173mb]/[691.2mb]}
+[2015-04-10 10:20:24,657][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][59285][34781] duration [1.9s], collections [1]/[2.9s], total [1.9s]/[10.6m], memory [199.4mb]->[183.4mb]/[990.7mb], all_pools {[young] [18mb]->[114.1kb]/[266.2mb]}{[survivor] [8.5mb]->[6.1mb]/[33.2mb]}{[old] [173mb]->[177.1mb]/[691.2mb]}
+[2015-04-10 10:49:30,318][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][61020][36037] duration [3.3s], collections [1]/[4.3s], total [3.3s]/[11m], memory [200.2mb]->[143.2mb]/[990.7mb], all_pools {[young] [66.9mb]->[8.2mb]/[266.2mb]}{[survivor] [4.5mb]->[6.3mb]/[33.2mb]}{[old] [128.7mb]->[128.7mb]/[691.2mb]}
+[2015-04-10 10:52:42,124][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][61210][36158] duration [1s], collections [1]/[1s], total [1s]/[11.1m], memory [255mb]->[192.4mb]/[990.7mb], all_pools {[young] [65.6mb]->[18kb]/[266.2mb]}{[survivor] [5.9mb]->[8.5mb]/[33.2mb]}{[old] [183.3mb]->[183.9mb]/[691.2mb]}
+[2015-04-10 11:00:18,608][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][61659][36445] duration [763ms], collections [1]/[1s], total [763ms]/[11.3m], memory [251mb]->[202.3mb]/[990.7mb], all_pools {[young] [62.9mb]->[12.5mb]/[266.2mb]}{[survivor] [7.4mb]->[6.9mb]/[33.2mb]}{[old] [180.5mb]->[182.8mb]/[691.2mb]}
+[2015-04-10 11:00:27,619][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][61668][36450] duration [817ms], collections [1]/[1s], total [817ms]/[11.3m], memory [211.1mb]->[211.8mb]/[990.7mb], all_pools {[young] [20.1mb]->[18.6mb]/[266.2mb]}{[survivor] [5.8mb]->[5.8mb]/[33.2mb]}{[old] [185.1mb]->[187.3mb]/[691.2mb]}
+[2015-04-10 11:24:04,364][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][63079][37389] duration [1.2s], collections [1]/[2.6s], total [1.2s]/[11.5m], memory [192.9mb]->[164.1mb]/[990.7mb], all_pools {[young] [30.4mb]->[183.3kb]/[266.2mb]}{[survivor] [5.5mb]->[6.9mb]/[33.2mb]}{[old] [157mb]->[157mb]/[691.2mb]}
+[2015-04-10 11:24:08,683][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][63083][37393] duration [840ms], collections [1]/[1.2s], total [840ms]/[11.5m], memory [196.2mb]->[169.9mb]/[990.7mb], all_pools {[young] [29.8mb]->[717.8kb]/[266.2mb]}{[survivor] [5.6mb]->[8.5mb]/[33.2mb]}{[old] [160.6mb]->[160.7mb]/[691.2mb]}
+[2015-04-10 11:38:40,940][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][63952][38017] duration [1.7s], collections [1]/[2s], total [1.7s]/[11.7m], memory [161.8mb]->[159mb]/[990.7mb], all_pools {[young] [16.5mb]->[11.6mb]/[266.2mb]}{[survivor] [4mb]->[6mb]/[33.2mb]}{[old] [141.2mb]->[141.2mb]/[691.2mb]}
+[2015-04-10 12:08:05,579][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][65713][39188] duration [846ms], collections [1]/[1s], total [846ms]/[11.9m], memory [149.9mb]->[194.2mb]/[990.7mb], all_pools {[young] [156kb]->[44.1mb]/[266.2mb]}{[survivor] [5.5mb]->[5.8mb]/[33.2mb]}{[old] [144.2mb]->[144.2mb]/[691.2mb]}
+[2015-04-10 14:16:54,329][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73425][43825] duration [1.7s], collections [1]/[1.8s], total [1.7s]/[12.8m], memory [205.5mb]->[192.6mb]/[990.7mb], all_pools {[young] [13.1mb]->[264.9kb]/[266.2mb]}{[survivor] [8.5mb]->[5.4mb]/[33.2mb]}{[old] [183.8mb]->[186.9mb]/[691.2mb]}
+[2015-04-10 14:18:07,552][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73474][43847] duration [1.9s], collections [1]/[4s], total [1.9s]/[12.8m], memory [155.6mb]->[96.1mb]/[990.7mb], all_pools {[young] [66.2mb]->[6.2mb]/[266.2mb]}{[survivor] [6.4mb]->[6mb]/[33.2mb]}{[old] [83mb]->[83.7mb]/[691.2mb]}
+[2015-04-10 14:18:14,508][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][73478][43850] duration [870ms], collections [1]/[1.2s], total [870ms]/[12.8m], memory [117.2mb]->[112.3mb]/[990.7mb], all_pools {[young] [18.1mb]->[13mb]/[266.2mb]}{[survivor] [8.5mb]->[6.1mb]/[33.2mb]}{[old] [90.5mb]->[93.1mb]/[691.2mb]}
+[2015-04-10 14:19:40,109][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][73563][43898] duration [833ms], collections [1]/[1.1s], total [833ms]/[12.9m], memory [190.1mb]->[129.1mb]/[990.7mb], all_pools {[young] [64.4mb]->[236kb]/[266.2mb]}{[survivor] [5.4mb]->[6.6mb]/[33.2mb]}{[old] [120.2mb]->[122.2mb]/[691.2mb]}
+[2015-04-10 14:19:46,390][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][73569][43901] duration [808ms], collections [1]/[1s], total [808ms]/[12.9m], memory [161.8mb]->[159mb]/[990.7mb], all_pools {[young] [33.8mb]->[29.4mb]/[266.2mb]}{[survivor] [5.6mb]->[4.7mb]/[33.2mb]}{[old] [122.2mb]->[124.9mb]/[691.2mb]}
+[2015-04-10 14:19:49,977][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73572][43903] duration [1.5s], collections [1]/[1.5s], total [1.5s]/[12.9m], memory [168mb]->[134.5mb]/[990.7mb], all_pools {[young] [37.1mb]->[2.3mb]/[266.2mb]}{[survivor] [6mb]->[4.4mb]/[33.2mb]}{[old] [124.9mb]->[127.8mb]/[691.2mb]}
+[2015-04-10 14:21:08,697][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73645][43944] duration [2s], collections [1]/[2.2s], total [2s]/[13m], memory [181.9mb]->[153.3mb]/[990.7mb], all_pools {[young] [31.5mb]->[474.1kb]/[266.2mb]}{[survivor] [5.1mb]->[6.1mb]/[33.2mb]}{[old] [145.3mb]->[146.8mb]/[691.2mb]}
+[2015-04-10 14:21:23,182][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73648][43947] duration [12.3s], collections [2]/[12.4s], total [12.3s]/[13.2m], memory [210.3mb]->[163.2mb]/[990.7mb], all_pools {[young] [55.9mb]->[8.9mb]/[266.2mb]}{[survivor] [7.6mb]->[3.7mb]/[33.2mb]}{[old] [146.8mb]->[150.5mb]/[691.2mb]}
+[2015-04-10 14:21:31,340][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73650][43949] duration [6.9s], collections [1]/[7.1s], total [6.9s]/[13.4m], memory [208mb]->[188.1mb]/[990.7mb], all_pools {[young] [50.5mb]->[28.4mb]/[266.2mb]}{[survivor] [6.8mb]->[6.5mb]/[33.2mb]}{[old] [150.5mb]->[153.1mb]/[691.2mb]}
+[2015-04-10 14:21:37,975][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73651][43950] duration [6.5s], collections [1]/[6.6s], total [6.5s]/[13.5m], memory [188.1mb]->[164.7mb]/[990.7mb], all_pools {[young] [28.4mb]->[244kb]/[266.2mb]}{[survivor] [6.5mb]->[8.5mb]/[33.2mb]}{[old] [153.1mb]->[156mb]/[691.2mb]}
+[2015-04-10 14:21:42,548][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73652][43951] duration [3.5s], collections [1]/[4.5s], total [3.5s]/[13.5m], memory [164.7mb]->[174.8mb]/[990.7mb], all_pools {[young] [244kb]->[7.6mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [156mb]->[158.7mb]/[691.2mb]}
+[2015-04-10 14:21:56,583][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73654][43952] duration [11.3s], collections [1]/[11.5s], total [11.3s]/[13.7m], memory [212.2mb]->[172mb]/[990.7mb], all_pools {[young] [45mb]->[72.7kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [158.7mb]->[163.4mb]/[691.2mb]}
+[2015-04-10 14:22:01,037][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73655][43953] duration [4.2s], collections [1]/[4.4s], total [4.2s]/[13.8m], memory [172mb]->[176.9mb]/[990.7mb], all_pools {[young] [72.7kb]->[4.4kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [163.4mb]->[168.4mb]/[691.2mb]}
+[2015-04-10 14:22:07,499][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73656][43954] duration [6.1s], collections [1]/[6.4s], total [6.1s]/[13.9m], memory [176.9mb]->[183.1mb]/[990.7mb], all_pools {[young] [4.4kb]->[1.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [168.4mb]->[173.2mb]/[691.2mb]}
+[2015-04-10 14:22:19,541][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73657][43955] duration [11.6s], collections [1]/[12s], total [11.6s]/[14.1m], memory [183.1mb]->[188mb]/[990.7mb], all_pools {[young] [1.3mb]->[276.2kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [173.2mb]->[179.2mb]/[691.2mb]}
+[2015-04-10 14:22:24,675][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73658][43956] duration [3.8s], collections [1]/[5.1s], total [3.8s]/[14.1m], memory [188mb]->[193mb]/[990.7mb], all_pools {[young] [276.2kb]->[1mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [179.2mb]->[183.4mb]/[691.2mb]}
+[2015-04-10 14:22:35,296][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73659][43957] duration [10.4s], collections [1]/[10.6s], total [10.4s]/[14.3m], memory [193mb]->[197.9mb]/[990.7mb], all_pools {[young] [1mb]->[180.3kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [183.4mb]->[189.2mb]/[691.2mb]}
+[2015-04-10 14:22:42,640][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][73660][43958] duration [7.1s], collections [1]/[7.3s], total [7.1s]/[14.4m], memory [197.9mb]->[204.3mb]/[990.7mb], all_pools {[young] [180.3kb]->[171.9kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [189.2mb]->[195.6mb]/[691.2mb]}
+[2015-04-10 14:53:27,501][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][75498][45055] duration [2s], collections [1]/[2.6s], total [2s]/[14.7m], memory [145.1mb]->[82.9mb]/[990.7mb], all_pools {[young] [65.8mb]->[1mb]/[266.2mb]}{[survivor] [3.4mb]->[6.1mb]/[33.2mb]}{[old] [75.8mb]->[75.8mb]/[691.2mb]}
+[2015-04-10 15:52:18,402][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][79006][47149] duration [2.6s], collections [1]/[4.9s], total [2.6s]/[15.2m], memory [179.5mb]->[143.1mb]/[990.7mb], all_pools {[young] [57.8mb]->[17.3mb]/[266.2mb]}{[survivor] [8.1mb]->[8.5mb]/[33.2mb]}{[old] [113.4mb]->[117.3mb]/[691.2mb]}
+[2015-04-10 15:52:22,996][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][79007][47151] duration [2.2s], collections [2]/[4.5s], total [2.2s]/[15.2m], memory [143.1mb]->[131.4mb]/[990.7mb], all_pools {[young] [17.3mb]->[62.3kb]/[266.2mb]}{[survivor] [8.5mb]->[8.3mb]/[33.2mb]}{[old] [117.3mb]->[123mb]/[691.2mb]}
+[2015-04-10 16:18:34,012][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][80572][48054] duration [774ms], collections [1]/[1s], total [774ms]/[15.4m], memory [198.4mb]->[199.5mb]/[990.7mb], all_pools {[young] [6.5mb]->[7mb]/[266.2mb]}{[survivor] [8.3mb]->[6.8mb]/[33.2mb]}{[old] [183.5mb]->[185.6mb]/[691.2mb]}
+[2015-04-10 16:34:17,251][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][81508][48544] duration [2.2s], collections [1]/[4.7s], total [2.2s]/[15.6m], memory [153.7mb]->[105.3mb]/[990.7mb], all_pools {[young] [54.2mb]->[531.3kb]/[266.2mb]}{[survivor] [5.6mb]->[8.5mb]/[33.2mb]}{[old] [93.9mb]->[96.3mb]/[691.2mb]}
+[2015-04-10 16:38:09,318][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][1], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1c195f1b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:38:09,318][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][2], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1c195f1b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:38:09,318][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][3], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1c195f1b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:38:09,318][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][4], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1c195f1b]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:38:09,769][DEBUG][action.search.type       ] [Chi Demon] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:38:09,318][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1c195f1b] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text"],
+    "min_score": .5,
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Madarchod"   }}
+          ]
+        }
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('.' (code 46)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: [B@5ea8467d; line: 3, column: 19]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2363)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:748)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:697)
+	... 9 more
+[2015-04-10 16:40:45,303][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][81886][48748] duration [3.5s], collections [1]/[4.4s], total [3.5s]/[15.8m], memory [237.3mb]->[195.3mb]/[990.7mb], all_pools {[young] [45.5mb]->[3mb]/[266.2mb]}{[survivor] [8.4mb]->[5.8mb]/[33.2mb]}{[old] [183.2mb]->[186.5mb]/[691.2mb]}
+[2015-04-10 17:52:30,566][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][86154][51100] duration [2s], collections [1]/[2.2s], total [2s]/[16.3m], memory [245.9mb]->[189.6mb]/[990.7mb], all_pools {[young] [58.3mb]->[511.4kb]/[266.2mb]}{[survivor] [5.5mb]->[7.1mb]/[33.2mb]}{[old] [181.9mb]->[181.9mb]/[691.2mb]}
+[2015-04-10 18:02:22,516][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][86742][51411] duration [983ms], collections [1]/[2.5s], total [983ms]/[16.4m], memory [235.9mb]->[204.3mb]/[990.7mb], all_pools {[young] [49.4mb]->[15.2mb]/[266.2mb]}{[survivor] [8.1mb]->[8.1mb]/[33.2mb]}{[old] [178.2mb]->[180.9mb]/[691.2mb]}
+[2015-04-10 18:02:37,567][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][86749][51415] duration [6.5s], collections [1]/[7.1s], total [6.5s]/[16.5m], memory [246.9mb]->[196.5mb]/[990.7mb], all_pools {[young] [53.4mb]->[38.5kb]/[266.2mb]}{[survivor] [8.5mb]->[7.2mb]/[33.2mb]}{[old] [185mb]->[189.2mb]/[691.2mb]}
+[2015-04-10 18:10:07,318][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][87192][51691] duration [978ms], collections [1]/[1.9s], total [978ms]/[16.6m], memory [211.6mb]->[171.9mb]/[990.7mb], all_pools {[young] [43.1mb]->[389kb]/[266.2mb]}{[survivor] [5.7mb]->[7.4mb]/[33.2mb]}{[old] [162.7mb]->[164.1mb]/[691.2mb]}
+[2015-04-10 19:07:05,635][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90578][53436] duration [4.8s], collections [1]/[6s], total [4.8s]/[17m], memory [231.9mb]->[176.2mb]/[990.7mb], all_pools {[young] [64.9mb]->[4.1mb]/[266.2mb]}{[survivor] [7.3mb]->[8.5mb]/[33.2mb]}{[old] [159.6mb]->[163.5mb]/[691.2mb]}
+[2015-04-10 19:07:19,813][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90579][53439] duration [8.1s], collections [3]/[14.1s], total [8.1s]/[17.2m], memory [176.2mb]->[182.8mb]/[990.7mb], all_pools {[young] [4.1mb]->[273.7kb]/[266.2mb]}{[survivor] [8.5mb]->[8.4mb]/[33.2mb]}{[old] [163.5mb]->[174.1mb]/[691.2mb]}
+[2015-04-10 19:07:21,177][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][90580][53440] duration [732ms], collections [1]/[1.3s], total [732ms]/[17.2m], memory [182.8mb]->[184mb]/[990.7mb], all_pools {[young] [273.7kb]->[43kb]/[266.2mb]}{[survivor] [8.4mb]->[8.5mb]/[33.2mb]}{[old] [174.1mb]->[175.4mb]/[691.2mb]}
+[2015-04-10 19:07:40,459][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90583][53441] duration [11.9s], collections [1]/[16.4s], total [11.9s]/[17.4m], memory [251.1mb]->[185.2mb]/[990.7mb], all_pools {[young] [67.2mb]->[660.6kb]/[266.2mb]}{[survivor] [8.5mb]->[7.4mb]/[33.2mb]}{[old] [175.4mb]->[177.1mb]/[691.2mb]}
+[2015-04-10 19:08:23,038][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90586][53442] duration [37.1s], collections [1]/[39.1s], total [37.1s]/[18m], memory [238.8mb]->[223.3mb]/[990.7mb], all_pools {[young] [54.2mb]->[31.8mb]/[266.2mb]}{[survivor] [7.4mb]->[8.5mb]/[33.2mb]}{[old] [177.1mb]->[182.9mb]/[691.2mb]}
+[2015-04-10 19:08:37,096][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90587][53443] duration [12.9s], collections [1]/[14s], total [12.9s]/[18.2m], memory [223.3mb]->[231.3mb]/[990.7mb], all_pools {[young] [31.8mb]->[27.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [182.9mb]->[194.9mb]/[691.2mb]}
+[2015-04-10 19:09:02,617][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90588][53444] duration [25.2s], collections [1]/[25.5s], total [25.2s]/[18.6m], memory [231.3mb]->[213.5mb]/[990.7mb], all_pools {[young] [27.9mb]->[4.3kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [194.9mb]->[205mb]/[691.2mb]}
+[2015-04-10 19:09:13,693][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90590][53445] duration [8.5s], collections [1]/[10s], total [8.5s]/[18.8m], memory [262.8mb]->[181.2mb]/[990.7mb], all_pools {[young] [49.3mb]->[26.6mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [205mb]->[146mb]/[691.2mb]}
+[2015-04-10 19:09:21,625][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90591][53446] duration [7.3s], collections [1]/[7.9s], total [7.3s]/[18.9m], memory [181.2mb]->[150.2mb]/[990.7mb], all_pools {[young] [26.6mb]->[7.6mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [146mb]->[134.1mb]/[691.2mb]}
+[2015-04-10 19:09:21,886][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 19:09:21,904][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 19:09:23,817][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90592][53447] duration [1.7s], collections [1]/[2.1s], total [1.7s]/[18.9m], memory [150.2mb]->[164.4mb]/[990.7mb], all_pools {[young] [7.6mb]->[15.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [134.1mb]->[140mb]/[691.2mb]}
+[2015-04-10 19:09:24,892][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 19:09:25,139][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 19:09:25,165][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 19:09:35,001][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-10 19:09:35,001][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-10 19:10:45,703][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][90668][53503] duration [3.3s], collections [1]/[4s], total [3.3s]/[19m], memory [233.8mb]->[184mb]/[990.7mb], all_pools {[young] [55.1mb]->[1.3mb]/[266.2mb]}{[survivor] [3.8mb]->[7.7mb]/[33.2mb]}{[old] [174.8mb]->[174.8mb]/[691.2mb]}
+[2015-04-10 19:22:22,600][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][91358][53897] duration [939ms], collections [1]/[1.4s], total [939ms]/[19.2m], memory [120.9mb]->[91.9mb]/[990.7mb], all_pools {[young] [41.7mb]->[13.1mb]/[266.2mb]}{[survivor] [5.4mb]->[4.7mb]/[33.2mb]}{[old] [73.7mb]->[74.1mb]/[691.2mb]}
+[2015-04-10 19:30:21,826][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91822][54134] duration [1.1s], collections [1]/[6.5s], total [1.1s]/[19.2m], memory [218mb]->[177.2mb]/[990.7mb], all_pools {[young] [51.3mb]->[7.6mb]/[266.2mb]}{[survivor] [7.2mb]->[8.5mb]/[33.2mb]}{[old] [159.4mb]->[161mb]/[691.2mb]}
+[2015-04-10 19:30:36,467][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91828][54136] duration [3.3s], collections [1]/[5.3s], total [3.3s]/[19.3m], memory [238.8mb]->[183.5mb]/[990.7mb], all_pools {[young] [64.6mb]->[3.4mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [165.7mb]->[171.6mb]/[691.2mb]}
+[2015-04-10 19:30:54,407][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91830][54137] duration [16.1s], collections [1]/[16.9s], total [16.1s]/[19.6m], memory [230.9mb]->[193.3mb]/[990.7mb], all_pools {[young] [50.7mb]->[7.2mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [171.6mb]->[177.6mb]/[691.2mb]}
+[2015-04-10 19:31:52,925][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91831][54138] duration [55.7s], collections [1]/[58.5s], total [55.7s]/[20.5m], memory [193.3mb]->[205.1mb]/[990.7mb], all_pools {[young] [7.2mb]->[10.6mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [177.6mb]->[186mb]/[691.2mb]}
+[2015-04-10 19:31:53,299][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 19:31:53,300][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 19:32:32,002][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91832][54139] duration [38.6s], collections [1]/[39s], total [38.6s]/[21.1m], memory [205.1mb]->[211.8mb]/[990.7mb], all_pools {[young] [10.6mb]->[7.2mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [186mb]->[196mb]/[691.2mb]}
+[2015-04-10 19:32:47,870][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 19:32:49,155][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 19:32:49,163][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91833][54141] duration [12.6s], collections [2]/[17.1s], total [12.6s]/[21.3m], memory [211.8mb]->[264.3mb]/[990.7mb], all_pools {[young] [7.2mb]->[50.8mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [196mb]->[204.9mb]/[691.2mb]}
+[2015-04-10 19:32:51,238][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 19:32:51,245][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 19:32:51,238][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91834][54142] duration [1.6s], collections [1]/[2s], total [1.6s]/[21.4m], memory [264.3mb]->[216mb]/[990.7mb], all_pools {[young] [50.8mb]->[26.5kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [204.9mb]->[207.5mb]/[691.2mb]}
+[2015-04-10 19:32:51,505][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 19:32:54,381][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][91835][54143] duration [1.5s], collections [1]/[3.1s], total [1.5s]/[21.4m], memory [216mb]->[221.1mb]/[990.7mb], all_pools {[young] [26.5kb]->[2.7mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [207.5mb]->[209.8mb]/[691.2mb]}
+[2015-04-10 19:33:02,571][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][91839][54145] duration [789ms], collections [1]/[1.1s], total [789ms]/[21.4m], memory [161.4mb]->[108.1mb]/[990.7mb], all_pools {[young] [61.8mb]->[8mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [91.1mb]->[94mb]/[691.2mb]}
+[2015-04-10 19:33:03,201][INFO ][twitter4j.TwitterStreamImpl] Remote host closed connection during handshake
+[2015-04-10 19:33:03,201][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Remote host closed connection during handshake
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=4d13a6ae or
+	http://www.google.co.jp/search?q=827b435e
+TwitterException{exceptionCode=[4d13a6ae-827b435e fc29eb32-cced2429 fc29eb32-cced2429], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:178)
+	at twitter4j.HttpClientBase.request(HttpClientBase.java:53)
+	at twitter4j.HttpClientBase.get(HttpClientBase.java:71)
+	at twitter4j.TwitterStreamImpl.getSampleStream(TwitterStreamImpl.java:194)
+	at twitter4j.TwitterStreamImpl$4.getStream(TwitterStreamImpl.java:165)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:521)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:946)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at twitter4j.HttpResponseImpl.<init>(HttpResponseImpl.java:35)
+	at twitter4j.HttpClientImpl.handleRequest(HttpClientImpl.java:142)
+	... 5 more
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:482)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	... 15 more
+[2015-04-10 19:33:03,274][INFO ][twitter4j.TwitterStreamImpl] Waiting for 250 milliseconds
+[2015-04-10 19:33:03,274][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 19:33:03,275][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 19:33:03,888][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-10 19:33:03,888][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-10 19:38:27,154][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][92154][54316] duration [2.8s], collections [1]/[3.4s], total [2.8s]/[21.5m], memory [260.2mb]->[204mb]/[990.7mb], all_pools {[young] [64.2mb]->[134.6kb]/[266.2mb]}{[survivor] [4.2mb]->[8.5mb]/[33.2mb]}{[old] [191.8mb]->[195.5mb]/[691.2mb]}
+[2015-04-10 19:38:30,533][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][92155][54317] duration [2.6s], collections [1]/[3.3s], total [2.6s]/[21.6m], memory [204mb]->[211mb]/[990.7mb], all_pools {[young] [134.6kb]->[3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [195.5mb]->[199.5mb]/[691.2mb]}
+[2015-04-10 19:38:37,926][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][92159][54318] duration [3.8s], collections [1]/[4.3s], total [3.8s]/[21.6m], memory [271.6mb]->[211mb]/[990.7mb], all_pools {[young] [63.6mb]->[177.7kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [199.5mb]->[202.3mb]/[691.2mb]}
+[2015-04-10 19:38:45,934][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][92167][54319] duration [779ms], collections [1]/[1s], total [779ms]/[21.6m], memory [144.5mb]->[84.6mb]/[990.7mb], all_pools {[young] [66.4mb]->[3.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [69.5mb]->[72.2mb]/[691.2mb]}
+[2015-04-10 19:49:03,837][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][92772][54690] duration [727ms], collections [1]/[1.4s], total [727ms]/[21.7m], memory [134.1mb]->[85.6mb]/[990.7mb], all_pools {[young] [48mb]->[500.9kb]/[266.2mb]}{[survivor] [5.2mb]->[4.4mb]/[33.2mb]}{[old] [80.8mb]->[80.8mb]/[691.2mb]}
+[2015-04-10 23:27:49,716][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][105872][61938] duration [2s], collections [1]/[2s], total [2s]/[23.1m], memory [145.3mb]->[79.6mb]/[990.7mb], all_pools {[young] [66.6mb]->[389.6kb]/[266.2mb]}{[survivor] [6mb]->[6.5mb]/[33.2mb]}{[old] [72.6mb]->[72.9mb]/[691.2mb]}
+[2015-04-10 23:55:34,480][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 23:55:34,480][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-10 23:55:34,619][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-10 23:55:34,619][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-10 23:55:34,621][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-10 23:55:35,811][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-10 23:55:35,811][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.

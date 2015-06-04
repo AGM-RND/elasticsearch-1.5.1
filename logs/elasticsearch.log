@@ -1,0 +1,658 @@
+[2015-05-05 18:36:42,739][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-05-05 18:36:42,949][INFO ][node                     ] [Mandroid] version[1.5.1], pid[6904], build[5e38401/2015-04-09T13:41:35Z]
+[2015-05-05 18:36:42,950][INFO ][node                     ] [Mandroid] initializing ...
+[2015-05-05 18:36:43,036][INFO ][plugins                  ] [Mandroid] loaded [river-twitter, example-plugin], sites []
+[2015-05-05 18:36:50,118][INFO ][node                     ] [Mandroid] initialized
+[2015-05-05 18:36:50,127][INFO ][node                     ] [Mandroid] starting ...
+[2015-05-05 18:36:50,572][INFO ][transport                ] [Mandroid] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-05-05 18:36:50,824][INFO ][discovery                ] [Mandroid] elasticsearch/SJGJFWnUS3Gp5qWaHoPEBQ
+[2015-05-05 18:36:54,635][INFO ][cluster.service          ] [Mandroid] new_master [Mandroid][SJGJFWnUS3Gp5qWaHoPEBQ][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-05-05 18:36:54,738][INFO ][http                     ] [Mandroid] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-05-05 18:36:54,739][INFO ][node                     ] [Mandroid] started
+[2015-05-05 18:36:56,945][INFO ][gateway                  ] [Mandroid] recovered [4] indices into cluster_state
+[2015-05-05 18:40:50,306][DEBUG][action.search.type       ] [Mandroid] [twitter_river][0], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f1363ce] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:40:50,307][DEBUG][action.search.type       ] [Mandroid] [twitter_river][3], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f1363ce] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:40:50,307][DEBUG][action.search.type       ] [Mandroid] [twitter_river][1], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f1363ce] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:40:50,313][DEBUG][action.search.type       ] [Mandroid] [twitter_river][4], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f1363ce]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:40:50,484][DEBUG][action.search.type       ] [Mandroid] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:40:50,313][DEBUG][action.search.type       ] [Mandroid] [twitter_river][2], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f1363ce] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+             "text":  "Dell" 
+    } 
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [twitter_river] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:295)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:382)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:281)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:276)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-05-05 18:44:20,580][DEBUG][action.search.type       ] [Mandroid] [twitter_river][3], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@17d58cae] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:44:20,581][DEBUG][action.search.type       ] [Mandroid] [twitter_river][0], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@17d58cae]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:44:20,603][DEBUG][action.search.type       ] [Mandroid] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:44:20,581][DEBUG][action.search.type       ] [Mandroid] [twitter_river][4], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@17d58cae] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:44:20,581][DEBUG][action.search.type       ] [Mandroid] [twitter_river][1], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@17d58cae] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:44:20,580][DEBUG][action.search.type       ] [Mandroid] [twitter_river][2], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@17d58cae] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:16,975][DEBUG][action.search.type       ] [Mandroid] [twitter_river][0], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@495d7e18] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:16,976][DEBUG][action.search.type       ] [Mandroid] [twitter_river][2], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@495d7e18] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:16,990][DEBUG][action.search.type       ] [Mandroid] [twitter_river][1], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@495d7e18] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:16,994][DEBUG][action.search.type       ] [Mandroid] [twitter_river][4], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@495d7e18]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:17,107][DEBUG][action.search.type       ] [Mandroid] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:45:16,991][DEBUG][action.search.type       ] [Mandroid] [twitter_river][3], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@495d7e18] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : {
+        "_source.text" : "this is a test"
+    }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,589][DEBUG][action.search.type       ] [Mandroid] [twitter_river][0], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5719b013] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,590][DEBUG][action.search.type       ] [Mandroid] [twitter_river][3], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5719b013]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,599][DEBUG][action.search.type       ] [Mandroid] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,590][DEBUG][action.search.type       ] [Mandroid] [twitter_river][4], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5719b013] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,589][DEBUG][action.search.type       ] [Mandroid] [twitter_river][1], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5719b013] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:01,589][DEBUG][action.search.type       ] [Mandroid] [twitter_river][2], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5719b013] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "title", "*_name" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,964][DEBUG][action.search.type       ] [Mandroid] [twitter_river][0], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@db53b7d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,965][DEBUG][action.search.type       ] [Mandroid] [twitter_river][1], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@db53b7d]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,969][DEBUG][action.search.type       ] [Mandroid] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,965][DEBUG][action.search.type       ] [Mandroid] [twitter_river][2], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@db53b7d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,965][DEBUG][action.search.type       ] [Mandroid] [twitter_river][3], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@db53b7d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 18:46:19,964][DEBUG][action.search.type       ] [Mandroid] [twitter_river][4], node[SJGJFWnUS3Gp5qWaHoPEBQ], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@db53b7d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+   "multi_match" : {
+    "query":    "Will Smith",
+    "fields": [ "text" ] 
+  }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: from[-1],size[-1]: Parse Failure [No parser for element [multi_match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-05-05 19:32:08,599][INFO ][node                     ] [Mandroid] stopping ...
+[2015-05-05 19:32:08,843][INFO ][node                     ] [Mandroid] stopped
+[2015-05-05 19:32:08,843][INFO ][node                     ] [Mandroid] closing ...
+[2015-05-05 19:32:08,848][INFO ][node                     ] [Mandroid] closed

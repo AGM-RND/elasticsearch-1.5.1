@@ -1,0 +1,248 @@
+[2015-04-24 16:40:06,413][INFO ][cluster.service          ] [Red Skull] added {[Sigmar][0-CI-q1ZTM68VW43-ry_BQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[Sigmar][0-CI-q1ZTM68VW43-ry_BQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-24 16:46:07,614][WARN ][monitor.jvm              ] [Red Skull] [gc][young][251863][207] duration [1.2s], collections [1]/[2.6s], total [1.2s]/[30.2s], memory [216.6mb]->[149.7mb]/[990.7mb], all_pools {[young] [67.1mb]->[192.9kb]/[266.2mb]}{[survivor] [65.8kb]->[174.1kb]/[33.2mb]}{[old] [149.4mb]->[149.4mb]/[691.2mb]}
+[2015-04-27 03:03:15,225][WARN ][monitor.jvm              ] [Red Skull] [gc][young][251864][219] duration [38.1s], collections [12]/[2.4d], total [38.1s]/[1.1m], memory [149.7mb]->[168mb]/[990.7mb], all_pools {[young] [192.9kb]->[13mb]/[266.2mb]}{[survivor] [174.1kb]->[3.3mb]/[33.2mb]}{[old] [149.4mb]->[151.6mb]/[691.2mb]}
+[2015-04-27 03:03:15,237][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Sigmar][0-CI-q1ZTM68VW43-ry_BQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Sigmar][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:15,980][INFO ][cluster.service          ] [Red Skull] removed {[Sigmar][0-CI-q1ZTM68VW43-ry_BQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Sigmar][0-CI-q1ZTM68VW43-ry_BQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:16,563][INFO ][cluster.service          ] [Red Skull] added {[Sleepwalker][twvLaAsZQ-mKYALW-K6V8A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Western Kid][Z_y-5qPsRK-bbs1JgZ_zKQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Belasco][iVx4fh_ZR4mQjGt2s455Sg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Astronomer][kWEcVHz4QbSA-HFLs_KHog][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[The Night Man][pANmQOt1Qe65kz8zlpyr5g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Apache Kid][Nz_IxdARQ9-cP4gDkBemhg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Victor von Doom][KUN452ojQ56tsXzqop1kIg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Master Pandemonium][kaEItbtMQmid4mrRx6_scg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},[Gwen Stacy][XER3ZyYbTBKgzi3ufS9yYA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[Sleepwalker][twvLaAsZQ-mKYALW-K6V8A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-27 03:03:17,574][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Sleepwalker][twvLaAsZQ-mKYALW-K6V8A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Sleepwalker][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:18,611][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Western Kid][Z_y-5qPsRK-bbs1JgZ_zKQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Western Kid][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:19,651][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Belasco][iVx4fh_ZR4mQjGt2s455Sg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Belasco][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:20,677][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Astronomer][kWEcVHz4QbSA-HFLs_KHog][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Astronomer][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:21,720][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[The Night Man][pANmQOt1Qe65kz8zlpyr5g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [The Night Man][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:22,747][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Apache Kid][Nz_IxdARQ9-cP4gDkBemhg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Apache Kid][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:23,793][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Victor von Doom][KUN452ojQ56tsXzqop1kIg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Victor von Doom][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:24,821][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Master Pandemonium][kaEItbtMQmid4mrRx6_scg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Master Pandemonium][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:25,858][WARN ][cluster.service          ] [Red Skull] failed to connect to node [[Gwen Stacy][XER3ZyYbTBKgzi3ufS9yYA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}]
+org.elasticsearch.transport.ConnectTransportException: [Gwen Stacy][inet[/10.130.133.14:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:797)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:704)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:447)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /10.130.133.14:9301
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2015-04-27 03:03:26,296][INFO ][cluster.service          ] [Red Skull] removed {[Astronomer][kWEcVHz4QbSA-HFLs_KHog][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Astronomer][kWEcVHz4QbSA-HFLs_KHog][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,364][INFO ][cluster.service          ] [Red Skull] removed {[Belasco][iVx4fh_ZR4mQjGt2s455Sg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Belasco][iVx4fh_ZR4mQjGt2s455Sg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,499][INFO ][cluster.service          ] [Red Skull] removed {[Sleepwalker][twvLaAsZQ-mKYALW-K6V8A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Sleepwalker][twvLaAsZQ-mKYALW-K6V8A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,509][INFO ][cluster.service          ] [Red Skull] removed {[Gwen Stacy][XER3ZyYbTBKgzi3ufS9yYA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Gwen Stacy][XER3ZyYbTBKgzi3ufS9yYA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,517][INFO ][cluster.service          ] [Red Skull] removed {[Victor von Doom][KUN452ojQ56tsXzqop1kIg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Victor von Doom][KUN452ojQ56tsXzqop1kIg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,525][INFO ][cluster.service          ] [Red Skull] removed {[Western Kid][Z_y-5qPsRK-bbs1JgZ_zKQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Western Kid][Z_y-5qPsRK-bbs1JgZ_zKQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,532][INFO ][cluster.service          ] [Red Skull] removed {[Apache Kid][Nz_IxdARQ9-cP4gDkBemhg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Apache Kid][Nz_IxdARQ9-cP4gDkBemhg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,548][INFO ][cluster.service          ] [Red Skull] removed {[The Night Man][pANmQOt1Qe65kz8zlpyr5g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([The Night Man][pANmQOt1Qe65kz8zlpyr5g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:26,553][INFO ][cluster.service          ] [Red Skull] removed {[Master Pandemonium][kaEItbtMQmid4mrRx6_scg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Master Pandemonium][kaEItbtMQmid4mrRx6_scg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-27 03:03:39,101][INFO ][node                     ] [Red Skull] stopping ...
+[2015-04-27 03:04:07,043][INFO ][node                     ] [Red Skull] stopped
+[2015-04-27 03:04:07,045][INFO ][node                     ] [Red Skull] closing ...
+[2015-04-27 03:04:07,648][INFO ][node                     ] [Red Skull] closed

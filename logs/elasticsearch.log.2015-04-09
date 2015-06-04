@@ -1,0 +1,308 @@
+[2015-04-09 16:37:39,855][INFO ][node                     ] [U-Go Girl] version[1.5.1], pid[19668], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-09 16:37:39,856][INFO ][node                     ] [U-Go Girl] initializing ...
+[2015-04-09 16:37:39,860][INFO ][plugins                  ] [U-Go Girl] loaded [], sites []
+[2015-04-09 16:37:44,664][INFO ][node                     ] [U-Go Girl] initialized
+[2015-04-09 16:37:44,785][INFO ][node                     ] [U-Go Girl] starting ...
+[2015-04-09 16:37:45,624][INFO ][transport                ] [U-Go Girl] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-09 16:37:45,832][INFO ][discovery                ] [U-Go Girl] elasticsearch/zHRpPTdSQ0OSVWLm4mMDJA
+[2015-04-09 16:37:49,612][INFO ][cluster.service          ] [U-Go Girl] new_master [U-Go Girl][zHRpPTdSQ0OSVWLm4mMDJA][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-09 16:37:49,669][INFO ][gateway                  ] [U-Go Girl] recovered [0] indices into cluster_state
+[2015-04-09 16:37:49,689][INFO ][http                     ] [U-Go Girl] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-09 16:37:49,689][INFO ][node                     ] [U-Go Girl] started
+[2015-04-09 16:40:28,304][INFO ][cluster.metadata         ] [U-Go Girl] [twitter] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [tweet]
+[2015-04-09 16:40:28,717][DEBUG][action.index             ] [U-Go Girl] [twitter][2], node[zHRpPTdSQ0OSVWLm4mMDJA], [P], s[STARTED]: Failed to execute [index {[twitter][tweet][1], source[{
+06        "tweet" : {
+07	        "user" : "kimchy",
+08	        "post_date" : "2009-11-15T14:12:12",
+09	        "message" : "trying out Elastic Search"
+10	    }
+11	}
+]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:565)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:480)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:515)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:422)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting a colon to separate field name and value
+ at [Source: [B@4fde0ff6; line: 2, column: 12]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:2759)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2734)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:521)
+	... 8 more
+[2015-04-09 16:41:07,226][DEBUG][action.index             ] [U-Go Girl] [twitter][2], node[zHRpPTdSQ0OSVWLm4mMDJA], [P], s[STARTED]: Failed to execute [index {[twitter][tweet][1], source[{
+06        "tweet" : {
+07	        "user" : "kimchy",
+08	        "post_date" : "2009-11-15T14:12:12",
+09	        "message" : "trying out Elastic Search"
+10	    }
+11	}
+]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:565)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:480)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:515)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:422)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting a colon to separate field name and value
+ at [Source: [B@edd20e5; line: 2, column: 12]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:2759)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2734)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:521)
+	... 8 more
+[2015-04-09 16:45:25,200][DEBUG][action.index             ] [U-Go Girl] [twitter][2], node[zHRpPTdSQ0OSVWLm4mMDJA], [P], s[STARTED]: Failed to execute [index {[twitter][tweet][1], source[{
+07	        "user" : "Ashish"
+08	        "post_date" : "2009-11-15T14:12:12",
+09	        "message" : "trying out Elastic Search"
+
+11	}
+]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:565)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:480)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:515)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:422)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting a colon to separate field name and value
+ at [Source: [B@2c43a738; line: 2, column: 13]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:2759)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2734)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:697)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:521)
+	... 8 more
+[2015-04-09 16:45:51,905][DEBUG][action.index             ] [U-Go Girl] [twitter][2], node[zHRpPTdSQ0OSVWLm4mMDJA], [P], s[STARTED]: Failed to execute [index {[twitter][tweet][1], source[{	        "user" : "Ashish"
+	        "post_date" : "2009-11-15T14:12:12",
+	        "message" : "trying out Elastic Search"
+
+11	}
+]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:565)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:493)
+	at org.elasticsearch.index.shard.IndexShard.prepareIndex(IndexShard.java:480)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:192)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:515)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:422)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate OBJECT entries
+ at [Source: [B@64148dd8; line: 2, column: 11]
+	at org.elasticsearch.common.jackson.core.JsonParser._constructError(JsonParser.java:1419)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:508)
+	at org.elasticsearch.common.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:437)
+	at org.elasticsearch.common.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:680)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:51)
+	at org.elasticsearch.index.mapper.object.ObjectMapper.parse(ObjectMapper.java:499)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:544)
+	... 8 more
+[2015-04-09 16:46:25,584][INFO ][cluster.metadata         ] [U-Go Girl] [twitter] update_mapping [tweet] (dynamic)
+[2015-04-09 16:50:19,263][INFO ][cluster.metadata         ] [U-Go Girl] [twitter] deleting index
+[2015-04-09 17:08:42,820][INFO ][node                     ] [U-Go Girl] stopping ...
+[2015-04-09 17:08:42,852][INFO ][node                     ] [U-Go Girl] stopped
+[2015-04-09 17:08:42,853][INFO ][node                     ] [U-Go Girl] closing ...
+[2015-04-09 17:08:42,859][INFO ][node                     ] [U-Go Girl] closed
+[2015-04-09 17:24:20,735][INFO ][node                     ] [Pasco] version[1.5.1], pid[22456], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-09 17:24:20,736][INFO ][node                     ] [Pasco] initializing ...
+[2015-04-09 17:24:20,742][INFO ][plugins                  ] [Pasco] loaded [], sites []
+[2015-04-09 17:24:24,570][INFO ][node                     ] [Pasco] initialized
+[2015-04-09 17:24:24,642][INFO ][node                     ] [Pasco] starting ...
+[2015-04-09 17:24:24,794][INFO ][transport                ] [Pasco] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-09 17:24:24,868][INFO ][discovery                ] [Pasco] elasticsearch/3XLsQBaPQea9-XURq8T2YA
+[2015-04-09 17:24:28,651][INFO ][cluster.service          ] [Pasco] new_master [Pasco][3XLsQBaPQea9-XURq8T2YA][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-09 17:24:28,726][INFO ][http                     ] [Pasco] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-09 17:24:28,727][INFO ][node                     ] [Pasco] started
+[2015-04-09 17:24:28,729][INFO ][gateway                  ] [Pasco] recovered [0] indices into cluster_state
+[2015-04-09 17:25:43,928][INFO ][node                     ] [Pasco] stopping ...
+[2015-04-09 17:25:43,957][INFO ][node                     ] [Pasco] stopped
+[2015-04-09 17:25:43,957][INFO ][node                     ] [Pasco] closing ...
+[2015-04-09 17:25:43,964][INFO ][node                     ] [Pasco] closed
+[2015-04-09 17:30:25,849][INFO ][node                     ] [Quasimodo] version[1.5.1], pid[22480], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-09 17:30:25,849][INFO ][node                     ] [Quasimodo] initializing ...
+[2015-04-09 17:30:25,855][INFO ][plugins                  ] [Quasimodo] loaded [], sites []
+[2015-04-09 17:30:29,587][INFO ][node                     ] [Quasimodo] initialized
+[2015-04-09 17:30:29,646][INFO ][node                     ] [Quasimodo] starting ...
+[2015-04-09 17:30:29,807][INFO ][transport                ] [Quasimodo] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-09 17:30:29,899][INFO ][discovery                ] [Quasimodo] elasticsearch/uGGY2-lyQOma-jrXqKyh4A
+[2015-04-09 17:30:33,676][INFO ][cluster.service          ] [Quasimodo] new_master [Quasimodo][uGGY2-lyQOma-jrXqKyh4A][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-09 17:30:33,709][INFO ][gateway                  ] [Quasimodo] recovered [0] indices into cluster_state
+[2015-04-09 17:30:33,743][INFO ][http                     ] [Quasimodo] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-09 17:30:33,744][INFO ][node                     ] [Quasimodo] started
+[2015-04-09 17:41:25,699][INFO ][node                     ] [Quasimodo] stopping ...
+[2015-04-09 17:41:25,749][INFO ][node                     ] [Quasimodo] stopped
+[2015-04-09 17:41:25,750][INFO ][node                     ] [Quasimodo] closing ...
+[2015-04-09 17:41:25,756][INFO ][node                     ] [Quasimodo] closed
+[2015-04-09 17:42:00,302][INFO ][node                     ] [Chi Demon] version[1.5.1], pid[21944], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-09 17:42:00,302][INFO ][node                     ] [Chi Demon] initializing ...
+[2015-04-09 17:42:00,316][INFO ][plugins                  ] [Chi Demon] loaded [river-twitter], sites []
+[2015-04-09 17:42:04,037][INFO ][node                     ] [Chi Demon] initialized
+[2015-04-09 17:42:04,101][INFO ][node                     ] [Chi Demon] starting ...
+[2015-04-09 17:42:04,255][INFO ][transport                ] [Chi Demon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-09 17:42:04,329][INFO ][discovery                ] [Chi Demon] elasticsearch/aZY9XW3rQs-chOdwi96OEg
+[2015-04-09 17:42:08,110][INFO ][cluster.service          ] [Chi Demon] new_master [Chi Demon][aZY9XW3rQs-chOdwi96OEg][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-09 17:42:08,157][INFO ][gateway                  ] [Chi Demon] recovered [0] indices into cluster_state
+[2015-04-09 17:42:08,199][INFO ][http                     ] [Chi Demon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-09 17:42:08,200][INFO ][node                     ] [Chi Demon] started
+[2015-04-09 17:47:00,050][INFO ][cluster.metadata         ] [Chi Demon] [_river] creating index, cause [auto(index api)], templates [], shards [1]/[1], mappings [twitter_river]
+[2015-04-09 17:47:00,339][INFO ][cluster.metadata         ] [Chi Demon] [_river] update_mapping [twitter_river] (dynamic)
+[2015-04-09 17:47:01,364][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] creating twitter stream river
+[2015-04-09 17:47:01,407][INFO ][cluster.metadata         ] [Chi Demon] [twitter_river] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2015-04-09 17:47:01,590][INFO ][cluster.metadata         ] [Chi Demon] [_river] update_mapping [twitter_river] (dynamic)
+[2015-04-09 17:47:01,612][INFO ][cluster.metadata         ] [Chi Demon] [twitter_river] create_mapping [status]
+[2015-04-09 17:47:01,618][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-09 17:47:01,709][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-09 17:47:02,757][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-09 17:47:02,758][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-09 17:47:03,985][INFO ][cluster.metadata         ] [Chi Demon] [twitter_river] update_mapping [status] (dynamic)
+[2015-04-09 18:39:11,581][DEBUG][action.index             ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [index {[twitter_river][_search&size=50][AUygVkjYbgHlpost4QVd], source[{
+    "query": {
+        "bool": {
+          "should": [
+            { "match": { "text":  "Obama" }},
+            { "match": { "text": "Modi"   }}
+          ]
+        }
+    }
+    
+}
+]}]
+org.elasticsearch.indices.InvalidTypeNameException: mapping type name [_search&size=50] can't start with '_'
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:319)
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:307)
+	at org.elasticsearch.index.mapper.MapperService.documentMapperWithAutoCreate(MapperService.java:467)
+	at org.elasticsearch.index.shard.IndexShard.prepareCreate(IndexShard.java:451)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:201)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:515)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:422)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-04-09 20:00:48,202][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8254][6453] duration [3.7s], collections [1]/[5.9s], total [3.7s]/[54.1s], memory [110.1mb]->[105.4mb]/[990.7mb], all_pools {[young] [25.8mb]->[16.4mb]/[266.2mb]}{[survivor] [3.7mb]->[8.5mb]/[33.2mb]}{[old] [80.5mb]->[80.5mb]/[691.2mb]}
+[2015-04-09 20:01:00,604][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8255][6454] duration [9.3s], collections [1]/[13.3s], total [9.3s]/[1m], memory [105.4mb]->[144.6mb]/[990.7mb], all_pools {[young] [16.4mb]->[52.2mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [80.5mb]->[83.9mb]/[691.2mb]}
+[2015-04-09 20:01:26,171][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8257][6455] duration [21.7s], collections [1]/[21.9s], total [21.7s]/[1.4m], memory [160.7mb]->[97.1mb]/[990.7mb], all_pools {[young] [68.3mb]->[47.8kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [83.9mb]->[88.6mb]/[691.2mb]}
+[2015-04-09 20:01:41,380][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-09 20:01:41,476][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-09 20:01:55,308][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-09 20:01:56,297][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-09 20:01:56,297][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-09 20:02:06,611][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-09 20:02:06,611][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-09 20:02:13,040][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8294][6466] duration [2.1s], collections [1]/[2.5s], total [2.1s]/[1.4m], memory [180.5mb]->[121.6mb]/[990.7mb], all_pools {[young] [62.3mb]->[906.2kb]/[266.2mb]}{[survivor] [2.8mb]->[5.3mb]/[33.2mb]}{[old] [115.4mb]->[115.4mb]/[691.2mb]}
+[2015-04-09 20:08:20,301][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8627][6697] duration [1s], collections [1]/[1.1s], total [1s]/[1.5m], memory [172mb]->[111.1mb]/[990.7mb], all_pools {[young] [62.2mb]->[456.2kb]/[266.2mb]}{[survivor] [5.6mb]->[6.4mb]/[33.2mb]}{[old] [104.1mb]->[104.2mb]/[691.2mb]}
+[2015-04-09 20:11:34,292][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][8818][6838] duration [2s], collections [1]/[2.7s], total [2s]/[1.6m], memory [108.7mb]->[55.7mb]/[990.7mb], all_pools {[young] [54.4mb]->[328kb]/[266.2mb]}{[survivor] [5.4mb]->[6.1mb]/[33.2mb]}{[old] [48.8mb]->[49.2mb]/[691.2mb]}
+[2015-04-09 21:30:43,081][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][13544][9764] duration [2.8s], collections [1]/[3s], total [2.8s]/[2.1m], memory [96.9mb]->[68.4mb]/[990.7mb], all_pools {[young] [37.2mb]->[5.5mb]/[266.2mb]}{[survivor] [4.9mb]->[8.2mb]/[33.2mb]}{[old] [54.6mb]->[54.6mb]/[691.2mb]}
+[2015-04-09 22:22:44,938][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][16658][11699] duration [805ms], collections [1]/[1.6s], total [805ms]/[2.4m], memory [112.9mb]->[103.9mb]/[990.7mb], all_pools {[young] [12.8mb]->[323.1kb]/[266.2mb]}{[survivor] [5.8mb]->[8.5mb]/[33.2mb]}{[old] [94.3mb]->[95.1mb]/[691.2mb]}
+[2015-04-09 23:02:36,801][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][19045][13018] duration [851ms], collections [1]/[1.7s], total [851ms]/[2.6m], memory [162.2mb]->[116.7mb]/[990.7mb], all_pools {[young] [48mb]->[463.4kb]/[266.2mb]}{[survivor] [7.9mb]->[7.5mb]/[33.2mb]}{[old] [106.1mb]->[108.8mb]/[691.2mb]}
+[2015-04-09 23:03:20,049][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19077][13032] duration [6.1s], collections [1]/[6.7s], total [6.1s]/[2.7m], memory [190.8mb]->[141.2mb]/[990.7mb], all_pools {[young] [68.2mb]->[15.9mb]/[266.2mb]}{[survivor] [7.7mb]->[8.5mb]/[33.2mb]}{[old] [114.9mb]->[116.8mb]/[691.2mb]}
+[2015-04-09 23:03:40,123][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19078][13033] duration [17.2s], collections [1]/[20s], total [17.2s]/[3m], memory [141.2mb]->[157.1mb]/[990.7mb], all_pools {[young] [15.9mb]->[28.6mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [116.8mb]->[120mb]/[691.2mb]}
+[2015-04-09 23:04:05,451][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19079][13034] duration [23.1s], collections [1]/[25.3s], total [23.1s]/[3.4m], memory [157.1mb]->[138.4mb]/[990.7mb], all_pools {[young] [28.6mb]->[1.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [120mb]->[128mb]/[691.2mb]}
+[2015-04-09 23:04:56,502][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19080][13035] duration [45.7s], collections [1]/[51s], total [45.7s]/[4.2m], memory [138.4mb]->[155.4mb]/[990.7mb], all_pools {[young] [1.9mb]->[7.9mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [128mb]->[139mb]/[691.2mb]}
+[2015-04-09 23:05:02,867][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-09 23:05:02,867][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-09 23:05:05,259][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-09 23:05:10,419][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-09 23:05:10,843][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19086][13038] duration [3.8s], collections [1]/[5.7s], total [3.8s]/[4.3m], memory [118.5mb]->[96.6mb]/[990.7mb], all_pools {[young] [40.8mb]->[17.3mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [69.1mb]->[70.8mb]/[691.2mb]}
+[2015-04-09 23:05:11,458][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-09 23:05:15,158][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][19090][13043] duration [769ms], collections [1]/[1.2s], total [769ms]/[4.3m], memory [90.7mb]->[116.1mb]/[990.7mb], all_pools {[young] [177kb]->[22.1mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [82.2mb]->[85.5mb]/[691.2mb]}
+[2015-04-09 23:05:17,497][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-09 23:05:17,674][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-09 23:08:19,121][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19268][13154] duration [2s], collections [1]/[4s], total [2s]/[4.4m], memory [71mb]->[48.2mb]/[990.7mb], all_pools {[young] [25.4mb]->[2.3mb]/[266.2mb]}{[survivor] [8.3mb]->[6.6mb]/[33.2mb]}{[old] [37.2mb]->[39.2mb]/[691.2mb]}
+[2015-04-09 23:09:05,595][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19289][13164] duration [5.5s], collections [2]/[9.7s], total [5.5s]/[4.5m], memory [130.1mb]->[81.3mb]/[990.7mb], all_pools {[young] [68.3mb]->[14.3mb]/[266.2mb]}{[survivor] [8mb]->[7.6mb]/[33.2mb]}{[old] [53.7mb]->[59.3mb]/[691.2mb]}
+[2015-04-09 23:11:55,334][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][19415][13240] duration [850ms], collections [1]/[1.3s], total [850ms]/[4.5m], memory [201.7mb]->[169.9mb]/[990.7mb], all_pools {[young] [56.8mb]->[25mb]/[266.2mb]}{[survivor] [4.9mb]->[4.8mb]/[33.2mb]}{[old] [140mb]->[140mb]/[691.2mb]}
+[2015-04-09 23:13:35,880][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19513][13294] duration [1s], collections [1]/[1.7s], total [1s]/[4.5m], memory [124.9mb]->[63.5mb]/[990.7mb], all_pools {[young] [66.2mb]->[180.5kb]/[266.2mb]}{[survivor] [4mb]->[8.5mb]/[33.2mb]}{[old] [54.5mb]->[54.8mb]/[691.2mb]}
+[2015-04-09 23:15:28,132][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19616][13350] duration [1s], collections [1]/[1.8s], total [1s]/[4.6m], memory [161.1mb]->[122.2mb]/[990.7mb], all_pools {[young] [45mb]->[3.7mb]/[266.2mb]}{[survivor] [5.3mb]->[7.7mb]/[33.2mb]}{[old] [110.7mb]->[110.7mb]/[691.2mb]}
+[2015-04-09 23:16:16,898][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][19663][13379] duration [1.2s], collections [1]/[1.7s], total [1.2s]/[4.6m], memory [179.5mb]->[136.9mb]/[990.7mb], all_pools {[young] [44.2mb]->[670kb]/[266.2mb]}{[survivor] [6.7mb]->[6.1mb]/[33.2mb]}{[old] [128.5mb]->[130.1mb]/[691.2mb]}

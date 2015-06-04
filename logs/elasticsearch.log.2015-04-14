@@ -1,0 +1,1 @@
+[2015-04-14 01:19:24,829][INFO ][monitor.jvm              ] [Watoomb] [gc][young][14688][13] duration [752ms], collections [1]/[1.7s], total [752ms]/[3.3s], memory [182.5mb]->[115.1mb]/[990.7mb], all_pools {[young] [67.8mb]->[855.7kb]/[266.2mb]}{[survivor] [6mb]->[2.1mb]/[33.2mb]}{[old] [108.6mb]->[112.1mb]/[691.2mb]}

@@ -1,0 +1,1079 @@
+[2015-04-17 11:29:32,565][INFO ][node                     ] [Magnus] stopping ...
+[2015-04-17 11:29:32,951][INFO ][node                     ] [Magnus] stopped
+[2015-04-17 11:29:32,952][INFO ][node                     ] [Magnus] closing ...
+[2015-04-17 11:29:32,983][INFO ][node                     ] [Magnus] closed
+[2015-04-17 11:30:14,502][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 11:30:14,580][INFO ][node                     ] [St. John Allerdyce] version[1.5.1], pid[4760], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 11:30:14,580][INFO ][node                     ] [St. John Allerdyce] initializing ...
+[2015-04-17 11:30:14,595][INFO ][plugins                  ] [St. John Allerdyce] loaded [river-twitter, example-plugin], sites [browser]
+[2015-04-17 11:30:18,308][INFO ][node                     ] [St. John Allerdyce] initialized
+[2015-04-17 11:30:18,316][INFO ][node                     ] [St. John Allerdyce] starting ...
+[2015-04-17 11:30:18,495][INFO ][transport                ] [St. John Allerdyce] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-17 11:30:18,608][INFO ][discovery                ] [St. John Allerdyce] elasticsearch/7lSIWay_QbKOEiMeXMbNfw
+[2015-04-17 11:30:22,388][INFO ][cluster.service          ] [St. John Allerdyce] new_master [St. John Allerdyce][7lSIWay_QbKOEiMeXMbNfw][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 11:30:22,473][INFO ][http                     ] [St. John Allerdyce] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-17 11:30:22,474][INFO ][node                     ] [St. John Allerdyce] started
+[2015-04-17 11:30:23,005][INFO ][gateway                  ] [St. John Allerdyce] recovered [4] indices into cluster_state
+[2015-04-17 11:33:52,787][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][4], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@380dcab8] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][4]: query[ConstantScore(cache(_type:testashish))],from[532100],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:72)
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:22)
+	at org.apache.lucene.util.PriorityQueue.<init>(PriorityQueue.java:66)
+	at org.apache.lucene.search.HitQueue.<init>(HitQueue.java:64)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:275)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:37)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:42)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:40)
+	at org.apache.lucene.search.TopScoreDocCollector.create(TopScoreDocCollector.java:258)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:490)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:448)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:281)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:269)
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:157)
+	... 8 more
+[2015-04-17 11:51:54,661][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][1], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@37005a20] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][1]: query[ConstantScore(cache(_type:testashish))],from[539600],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:51:54,661][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][2], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@37005a20] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][2]: query[ConstantScore(cache(_type:testashish))],from[539600],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:51:39,537][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][4]: Failed to execute [org.elasticsearch.action.search.SearchRequest@16d9198b] while moving to second phase
+java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:51:39,338][WARN ][St. John Allerdyce       ] unexpected exception in multicast receiver
+java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:51:05,735][ERROR][rest.action.support      ] failed to send failure response
+java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:50:51,805][WARN ][netty.channel.socket.nio.AbstractNioSelector] Unexpected exception in the selector loop.
+java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:50:49,983][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][0], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f71a393] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][0]: query[ConstantScore(cache(_type:testashish))],from[537300],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:72)
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:22)
+	at org.apache.lucene.util.PriorityQueue.<init>(PriorityQueue.java:66)
+	at org.apache.lucene.search.HitQueue.<init>(HitQueue.java:64)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:275)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:37)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:42)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:40)
+	at org.apache.lucene.search.TopScoreDocCollector.create(TopScoreDocCollector.java:258)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:490)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:448)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:281)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:269)
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:157)
+	... 8 more
+[2015-04-17 11:50:46,836][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][4], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f71a393] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][4]: query[ConstantScore(cache(_type:testashish))],from[537300],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:50:30,957][WARN ][netty.channel.socket.nio.AbstractNioSelector] Unexpected exception in the selector loop.
+java.lang.OutOfMemoryError: Java heap space
+[2015-04-17 11:34:15,881][DEBUG][action.search.type       ] [St. John Allerdyce] [fast][3], node[7lSIWay_QbKOEiMeXMbNfw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2f71a393] lastShard [true]
+org.elasticsearch.search.query.QueryPhaseExecutionException: [fast][3]: query[ConstantScore(cache(_type:testashish))],from[537300],size[100]: Query Failed [Failed to execute main query]
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:163)
+	at org.elasticsearch.search.SearchService.loadOrExecuteQueryPhase(SearchService.java:286)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:297)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:72)
+	at org.apache.lucene.search.HitQueue.getSentinelObject(HitQueue.java:22)
+	at org.apache.lucene.util.PriorityQueue.<init>(PriorityQueue.java:66)
+	at org.apache.lucene.search.HitQueue.<init>(HitQueue.java:64)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:275)
+	at org.apache.lucene.search.TopScoreDocCollector.<init>(TopScoreDocCollector.java:37)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:42)
+	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.<init>(TopScoreDocCollector.java:40)
+	at org.apache.lucene.search.TopScoreDocCollector.create(TopScoreDocCollector.java:258)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:490)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:448)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:281)
+	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:269)
+	at org.elasticsearch.search.query.QueryPhase.execute(QueryPhase.java:157)
+	... 8 more
+[2015-04-17 11:54:06,409][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 11:54:06,594][INFO ][node                     ] [Alex Wilder] version[1.5.1], pid[6916], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 11:54:06,594][INFO ][node                     ] [Alex Wilder] initializing ...
+[2015-04-17 11:54:06,634][INFO ][plugins                  ] [Alex Wilder] loaded [river-twitter, example-plugin], sites [browser]
+[2015-04-17 11:54:12,345][INFO ][node                     ] [Alex Wilder] initialized
+[2015-04-17 11:54:12,353][INFO ][node                     ] [Alex Wilder] starting ...
+[2015-04-17 11:54:12,729][INFO ][transport                ] [Alex Wilder] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-17 11:54:12,932][INFO ][discovery                ] [Alex Wilder] elasticsearch/TamspEXJTVC6pReHaP6YCg
+[2015-04-17 11:54:16,746][INFO ][cluster.service          ] [Alex Wilder] new_master [Alex Wilder][TamspEXJTVC6pReHaP6YCg][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 11:54:16,846][INFO ][http                     ] [Alex Wilder] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-17 11:54:16,846][INFO ][node                     ] [Alex Wilder] started
+[2015-04-17 11:54:17,771][INFO ][gateway                  ] [Alex Wilder] recovered [4] indices into cluster_state
+[2015-04-17 11:56:54,915][WARN ][monitor.jvm              ] [Alex Wilder] [gc][young][139][116] duration [2.4s], collections [1]/[5.5s], total [2.4s]/[12.3s], memory [891.6mb]->[883.7mb]/[990.7mb], all_pools {[young] [256.4mb]->[192.4mb]/[266.2mb]}{[survivor] [0b]->[0b]/[33.2mb]}{[old] [635.2mb]->[691.2mb]/[691.2mb]}
+[2015-04-17 11:58:26,789][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 11:58:26,871][INFO ][node                     ] [Magik] version[1.5.1], pid[5232], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 11:58:26,871][INFO ][node                     ] [Magik] initializing ...
+[2015-04-17 11:58:26,886][INFO ][plugins                  ] [Magik] loaded [river-twitter, example-plugin], sites []
+[2015-04-17 11:58:30,522][INFO ][node                     ] [Magik] initialized
+[2015-04-17 11:58:30,530][INFO ][node                     ] [Magik] starting ...
+[2015-04-17 11:58:30,722][INFO ][transport                ] [Magik] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-17 11:58:30,794][INFO ][discovery                ] [Magik] elasticsearch/6EssN-yLQM2xLcUjzzKh8A
+[2015-04-17 11:58:34,635][INFO ][cluster.service          ] [Magik] new_master [Magik][6EssN-yLQM2xLcUjzzKh8A][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 11:58:34,748][INFO ][http                     ] [Magik] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-17 11:58:34,749][INFO ][node                     ] [Magik] started
+[2015-04-17 11:58:35,802][INFO ][gateway                  ] [Magik] recovered [4] indices into cluster_state
+[2015-04-17 13:52:17,867][INFO ][cluster.service          ] [Magik] added {[Hildegarde][BLA9_Sq3SlOjS8ciEdLjBg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Hildegarde][BLA9_Sq3SlOjS8ciEdLjBg][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 13:54:00,252][WARN ][monitor.jvm              ] [Magik] [gc][young][6901][14] duration [1.1s], collections [1]/[2.2s], total [1.1s]/[1.4s], memory [196.3mb]->[128.6mb]/[990.7mb], all_pools {[young] [67.9mb]->[400.3kb]/[266.2mb]}{[survivor] [6.6mb]->[2.1mb]/[33.2mb]}{[old] [121.7mb]->[126mb]/[691.2mb]}
+[2015-04-17 13:59:01,278][INFO ][cluster.service          ] [Magik] removed {[Hildegarde][BLA9_Sq3SlOjS8ciEdLjBg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Hildegarde][BLA9_Sq3SlOjS8ciEdLjBg][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 13:59:45,802][INFO ][cluster.service          ] [Magik] added {[Levan][U4Tws6uwR_CxxCy2oZZP5w][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Levan][U4Tws6uwR_CxxCy2oZZP5w][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 14:01:27,432][INFO ][cluster.service          ] [Magik] removed {[Levan][U4Tws6uwR_CxxCy2oZZP5w][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Levan][U4Tws6uwR_CxxCy2oZZP5w][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 14:45:08,972][INFO ][cluster.service          ] [Magik] added {[A'lars][J-fYN-aTRSeWefkh7uc21w][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[A'lars][J-fYN-aTRSeWefkh7uc21w][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 14:48:44,939][INFO ][monitor.jvm              ] [Magik] [gc][young][10166][26] duration [949ms], collections [1]/[1.4s], total [949ms]/[2.9s], memory [200.3mb]->[130.2mb]/[990.7mb], all_pools {[young] [68.1mb]->[106.8kb]/[266.2mb]}{[survivor] [5.7mb]->[2.5mb]/[33.2mb]}{[old] [126.4mb]->[127.5mb]/[691.2mb]}
+[2015-04-17 15:02:18,572][INFO ][cluster.service          ] [Magik] removed {[A'lars][J-fYN-aTRSeWefkh7uc21w][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([A'lars][J-fYN-aTRSeWefkh7uc21w][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 15:03:38,936][INFO ][cluster.service          ] [Magik] added {[Arishem the Judge][fHS9T--2S4WWAnN1Q9nmwA][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Arishem the Judge][fHS9T--2S4WWAnN1Q9nmwA][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 15:04:47,940][INFO ][cluster.service          ] [Magik] removed {[Arishem the Judge][fHS9T--2S4WWAnN1Q9nmwA][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Arishem the Judge][fHS9T--2S4WWAnN1Q9nmwA][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 15:37:38,626][INFO ][cluster.service          ] [Magik] added {[Johnny Storm][rf4mLpLeStGPTjE4a6dufw][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Johnny Storm][rf4mLpLeStGPTjE4a6dufw][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 15:45:08,618][INFO ][node                     ] [Magik] stopping ...
+[2015-04-17 15:45:39,949][DEBUG][action.admin.cluster.node.stats] [Magik] failed to execute on node [rf4mLpLeStGPTjE4a6dufw]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][cluster:monitor/nodes/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.action.support.nodes.TransportNodesOperationAction$AsyncAction.start(TransportNodesOperationAction.java:165)
+	at org.elasticsearch.action.support.nodes.TransportNodesOperationAction$AsyncAction.access$300(TransportNodesOperationAction.java:97)
+	at org.elasticsearch.action.support.nodes.TransportNodesOperationAction.doExecute(TransportNodesOperationAction.java:70)
+	at org.elasticsearch.action.support.nodes.TransportNodesOperationAction.doExecute(TransportNodesOperationAction.java:43)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:253)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 10 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [twitter_river][3], node[rf4mLpLeStGPTjE4a6dufw], [R], s[INITIALIZING]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [_river][0], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [.kibana][0], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [fast][3], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [twitter_river][1], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [fast][0], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [fast][1], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,951][DEBUG][action.admin.indices.stats] [Magik] [fast][4], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,950][DEBUG][action.admin.indices.stats] [Magik] [fast][2], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,950][DEBUG][action.admin.indices.stats] [Magik] [twitter_river][0], node[rf4mLpLeStGPTjE4a6dufw], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:39,950][DEBUG][action.admin.indices.stats] [Magik] [twitter_river][2], node[rf4mLpLeStGPTjE4a6dufw], [R], s[INITIALIZING]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3f1218e0]
+org.elasticsearch.transport.SendRequestTransportException: [Johnny Storm][inet[/10.130.133.14:9301]][indices:monitor/stats[s]]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:286)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:249)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.performOperation(TransportBroadcastOperationAction.java:183)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction.start(TransportBroadcastOperationAction.java:151)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:71)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction.doExecute(TransportBroadcastOperationAction.java:47)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:75)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:267)
+	at org.elasticsearch.cluster.InternalClusterInfoService$ClusterInfoUpdateJob.run(InternalClusterInfoService.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:270)
+	... 11 more
+[2015-04-17 15:45:45,079][INFO ][node                     ] [Magik] stopped
+[2015-04-17 15:45:46,132][INFO ][node                     ] [Magik] closing ...
+[2015-04-17 15:45:46,455][INFO ][node                     ] [Magik] closed
+[2015-04-17 15:48:29,937][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 15:48:30,728][INFO ][node                     ] [Vargas] version[1.5.1], pid[4740], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 15:48:30,728][INFO ][node                     ] [Vargas] initializing ...
+[2015-04-17 15:48:31,103][INFO ][plugins                  ] [Vargas] loaded [river-twitter, example-plugin], sites []
+[2015-04-17 15:48:50,451][INFO ][node                     ] [Vargas] initialized
+[2015-04-17 15:48:50,480][INFO ][node                     ] [Vargas] starting ...
+[2015-04-17 15:48:50,763][INFO ][transport                ] [Vargas] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/10.130.133.14:9301]}
+[2015-04-17 15:48:50,925][INFO ][discovery                ] [Vargas] elasticsearch/9squc738RLCQgLiTU4aCMg
+[2015-04-17 15:48:54,048][INFO ][cluster.service          ] [Vargas] detected_master [Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]], added {[Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]],}, reason: zen-disco-receive(from master [[Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]]])
+[2015-04-17 15:48:54,161][INFO ][http                     ] [Vargas] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/10.130.133.14:9201]}
+[2015-04-17 15:48:54,162][INFO ][node                     ] [Vargas] started
+[2015-04-17 15:51:35,622][INFO ][discovery.zen            ] [Vargas] master_left [[Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]]], reason [transport disconnected]
+[2015-04-17 15:51:35,654][WARN ][discovery.zen            ] [Vargas] master left (reason = transport disconnected), current nodes: {[Vargas][9squc738RLCQgLiTU4aCMg][QA40][inet[/10.130.133.14:9301]],}
+[2015-04-17 15:51:35,674][INFO ][cluster.service          ] [Vargas] removed {[Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]],}, reason: zen-disco-master_failed ([Doughboy][GB08pc8uQOiba7cIGtpeug][QA40][inet[/10.130.133.14:9300]])
+[2015-04-17 15:51:42,072][INFO ][cluster.service          ] [Vargas] new_master [Vargas][9squc738RLCQgLiTU4aCMg][QA40][inet[/10.130.133.14:9301]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 15:52:57,782][INFO ][cluster.service          ] [Vargas] added {[Human Torch][G8iHVjA5TvaAfNiazbJKtQ][QA40][inet[/10.130.133.14:9300]],}, reason: zen-disco-receive(join from node[[Human Torch][G8iHVjA5TvaAfNiazbJKtQ][QA40][inet[/10.130.133.14:9300]]])
+[2015-04-17 15:57:06,150][INFO ][cluster.service          ] [Vargas] removed {[Human Torch][G8iHVjA5TvaAfNiazbJKtQ][QA40][inet[/10.130.133.14:9300]],}, reason: zen-disco-node_failed([Human Torch][G8iHVjA5TvaAfNiazbJKtQ][QA40][inet[/10.130.133.14:9300]]), reason transport disconnected
+[2015-04-17 15:58:14,698][INFO ][cluster.service          ] [Vargas] added {[Harry Leland][982ywqqwTHSOl49XnNmpgQ][QA40][inet[/10.130.133.14:9300]],}, reason: zen-disco-receive(join from node[[Harry Leland][982ywqqwTHSOl49XnNmpgQ][QA40][inet[/10.130.133.14:9300]]])
+[2015-04-17 16:15:11,318][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 16:15:11,488][INFO ][node                     ] [Caliban] version[1.5.1], pid[7560], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 16:15:11,489][INFO ][node                     ] [Caliban] initializing ...
+[2015-04-17 16:15:11,549][INFO ][plugins                  ] [Caliban] loaded [river-twitter, example-plugin], sites []
+[2015-04-17 16:15:24,714][INFO ][node                     ] [Caliban] initialized
+[2015-04-17 16:15:24,730][INFO ][node                     ] [Caliban] starting ...
+[2015-04-17 16:15:25,092][INFO ][transport                ] [Caliban] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-17 16:15:25,277][INFO ][discovery                ] [Caliban] elasticsearch/cIpuS5mhSHatDLjHYhpcyw
+[2015-04-17 16:15:29,073][INFO ][cluster.service          ] [Caliban] new_master [Caliban][cIpuS5mhSHatDLjHYhpcyw][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 16:15:29,182][INFO ][http                     ] [Caliban] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-17 16:15:29,183][INFO ][node                     ] [Caliban] started
+[2015-04-17 16:15:29,985][INFO ][gateway                  ] [Caliban] recovered [4] indices into cluster_state
+[2015-04-17 16:17:02,297][INFO ][cluster.service          ] [Caliban] added {[Exterminator][5PgEkW9aSdOZDKcOljvQeg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Exterminator][5PgEkW9aSdOZDKcOljvQeg][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 16:22:53,041][DEBUG][action.search.type       ] [Caliban] [fast][1], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21780b86] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:22:53,073][DEBUG][action.search.type       ] [Caliban] [fast][2], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21780b86]
+org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:22:53,062][DEBUG][action.search.type       ] [Caliban] [fast][3], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21780b86] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:22:53,061][DEBUG][action.search.type       ] [Caliban] [fast][0], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21780b86] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:22:53,058][DEBUG][action.search.type       ] [Caliban] [fast][4], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@21780b86] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:22:53,203][DEBUG][action.search.type       ] [Caliban] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "simpdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:20,854][DEBUG][action.search.type       ] [Caliban] [fast][0], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6cc3881f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:20,885][DEBUG][action.search.type       ] [Caliban] [fast][4], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6cc3881f]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:20,874][DEBUG][action.search.type       ] [Caliban] [fast][2], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6cc3881f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:20,873][DEBUG][action.search.type       ] [Caliban] [fast][3], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6cc3881f] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:20,873][DEBUG][action.search.type       ] [Caliban] [fast][1], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@6cc3881f] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:20,920][DEBUG][action.search.type       ] [Caliban] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "*google*" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:46,924][DEBUG][action.search.type       ] [Caliban] [fast][0], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@292d480c] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:46,938][DEBUG][action.search.type       ] [Caliban] [fast][3], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@292d480c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:46,936][DEBUG][action.search.type       ] [Caliban] [fast][1], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@292d480c] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:46,930][DEBUG][action.search.type       ] [Caliban] [fast][4], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@292d480c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:24:46,949][DEBUG][action.search.type       ] [Caliban] [fast][2], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@292d480c]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:24:47,118][DEBUG][action.search.type       ] [Caliban] All shards failed for phase: [query]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "wildcard" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:26:13,402][DEBUG][action.search.type       ] [Caliban] [fast][0], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1122199d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:26:13,406][DEBUG][action.search.type       ] [Caliban] [fast][2], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1122199d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:26:13,425][DEBUG][action.search.type       ] [Caliban] [fast][3], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1122199d]
+org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:26:13,594][DEBUG][action.search.type       ] [Caliban] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:26:13,416][DEBUG][action.search.type       ] [Caliban] [fast][1], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1122199d] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:26:13,406][DEBUG][action.search.type       ] [Caliban] [fast][4], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1122199d] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "match" : { "shortdesp" : "google" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: from[-1],size[-1]: Parse Failure [No parser for element [match]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:29:10,307][DEBUG][action.search.type       ] [Caliban] [fast][4], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5d90de52] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][4]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][4]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:29:10,321][DEBUG][action.search.type       ] [Caliban] [fast][2], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5d90de52]
+org.elasticsearch.search.SearchParseException: [fast][2]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:29:10,383][DEBUG][action.search.type       ] [Caliban] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [fast][2]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][2]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:29:10,313][DEBUG][action.search.type       ] [Caliban] [fast][1], node[5PgEkW9aSdOZDKcOljvQeg], [R], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5d90de52] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [Exterminator][inet[/10.130.133.14:9301]][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:776)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:767)
+	at org.elasticsearch.transport.netty.MessageChannelHandler$RequestHandler.doRun(MessageChannelHandler.java:277)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][1]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 10 more
+[2015-04-17 16:29:10,312][DEBUG][action.search.type       ] [Caliban] [fast][3], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5d90de52] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][3]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][3]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:29:10,311][DEBUG][action.search.type       ] [Caliban] [fast][0], node[cIpuS5mhSHatDLjHYhpcyw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@5d90de52] lastShard [true]
+org.elasticsearch.search.SearchParseException: [fast][0]: query[longdesp:google],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query": {
+        "query_string": {
+            "query": "Google",
+            "fields": ["longdesp"]
+        }
+    } ,
+     "wildcard" : { "user" : "ki*y" }
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [fast][0]: query[longdesp:google],from[-1],size[-1]: Parse Failure [No parser for element [wildcard]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:703)
+	... 9 more
+[2015-04-17 16:31:51,530][INFO ][cluster.service          ] [Caliban] removed {[Exterminator][5PgEkW9aSdOZDKcOljvQeg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Exterminator][5PgEkW9aSdOZDKcOljvQeg][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 16:37:36,199][INFO ][cluster.service          ] [Caliban] added {[Magnum][LXJdkPgCQZ2EbvMLRd8HTw][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Magnum][LXJdkPgCQZ2EbvMLRd8HTw][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 16:38:02,693][INFO ][monitor.jvm              ] [Caliban] [gc][young][1330][14] duration [819ms], collections [1]/[1.5s], total [819ms]/[1.1s], memory [202.2mb]->[138.4mb]/[990.7mb], all_pools {[young] [67mb]->[135.1kb]/[266.2mb]}{[survivor] [8mb]->[3.7mb]/[33.2mb]}{[old] [127.1mb]->[134.5mb]/[691.2mb]}
+[2015-04-17 16:49:27,027][INFO ][cluster.service          ] [Caliban] removed {[Magnum][LXJdkPgCQZ2EbvMLRd8HTw][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Magnum][LXJdkPgCQZ2EbvMLRd8HTw][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 16:54:04,239][WARN ][common.jna               ] unable to link C library. native methods (mlockall) will be disabled.
+[2015-04-17 16:54:04,491][INFO ][node                     ] [Tex Dawson] version[1.5.1], pid[3868], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-17 16:54:04,491][INFO ][node                     ] [Tex Dawson] initializing ...
+[2015-04-17 16:54:04,643][INFO ][plugins                  ] [Tex Dawson] loaded [river-twitter, example-plugin], sites []
+[2015-04-17 16:54:23,021][INFO ][node                     ] [Tex Dawson] initialized
+[2015-04-17 16:54:23,050][INFO ][node                     ] [Tex Dawson] starting ...
+[2015-04-17 16:54:23,441][INFO ][transport                ] [Tex Dawson] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-17 16:54:23,636][INFO ][discovery                ] [Tex Dawson] elasticsearch/O4JU6KHIRHe2vktV6eA3LQ
+[2015-04-17 16:54:27,441][INFO ][cluster.service          ] [Tex Dawson] new_master [Tex Dawson][O4JU6KHIRHe2vktV6eA3LQ][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-17 16:54:27,544][INFO ][http                     ] [Tex Dawson] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-17 16:54:27,545][INFO ][node                     ] [Tex Dawson] started
+[2015-04-17 16:54:28,668][INFO ][gateway                  ] [Tex Dawson] recovered [4] indices into cluster_state
+[2015-04-17 16:55:09,698][INFO ][cluster.service          ] [Tex Dawson] added {[Jackal][1x0b5PpgTt-wANNOPR-Fxg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Jackal][1x0b5PpgTt-wANNOPR-Fxg][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 17:29:08,717][INFO ][cluster.service          ] [Tex Dawson] removed {[Jackal][1x0b5PpgTt-wANNOPR-Fxg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Jackal][1x0b5PpgTt-wANNOPR-Fxg][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 17:30:05,762][INFO ][cluster.service          ] [Tex Dawson] added {[Sunstreak][d_vV0WCSRK-u6mOYrX7Syg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Sunstreak][d_vV0WCSRK-u6mOYrX7Syg][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 17:57:29,263][INFO ][cluster.service          ] [Tex Dawson] removed {[Sunstreak][d_vV0WCSRK-u6mOYrX7Syg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Sunstreak][d_vV0WCSRK-u6mOYrX7Syg][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 17:58:19,413][INFO ][cluster.service          ] [Tex Dawson] added {[Terraxia][HkLmTcrVTrajo0qUbaULoA][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Terraxia][HkLmTcrVTrajo0qUbaULoA][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:14:28,200][INFO ][cluster.service          ] [Tex Dawson] removed {[Terraxia][HkLmTcrVTrajo0qUbaULoA][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Terraxia][HkLmTcrVTrajo0qUbaULoA][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [twitter_river][4], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,231][DEBUG][action.admin.indices.stats] [Tex Dawson] [_river][0], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,231][DEBUG][action.admin.indices.stats] [Tex Dawson] [.kibana][0], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,231][DEBUG][action.admin.indices.stats] [Tex Dawson] [twitter_river][0], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,231][DEBUG][action.admin.indices.stats] [Tex Dawson] [fast][2], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [fast][0], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [fast][1], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [twitter_river][3], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [fast][3], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [twitter_river][2], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [twitter_river][1], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.indices.stats] [Tex Dawson] [fast][4], node[HkLmTcrVTrajo0qUbaULoA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@3e3d4407]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][indices:monitor/stats[s]] disconnected
+[2015-04-17 18:14:28,230][DEBUG][action.admin.cluster.node.stats] [Tex Dawson] failed to execute on node [HkLmTcrVTrajo0qUbaULoA]
+org.elasticsearch.transport.NodeDisconnectedException: [Terraxia][inet[/10.130.133.14:9301]][cluster:monitor/nodes/stats[n]] disconnected
+[2015-04-17 18:16:21,160][INFO ][cluster.service          ] [Tex Dawson] added {[Meteorite II][sUPbEmPaSf-w2Q-WVR4h6g][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Meteorite II][sUPbEmPaSf-w2Q-WVR4h6g][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:23:20,953][INFO ][cluster.service          ] [Tex Dawson] removed {[Meteorite II][sUPbEmPaSf-w2Q-WVR4h6g][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Meteorite II][sUPbEmPaSf-w2Q-WVR4h6g][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 18:24:02,431][INFO ][cluster.service          ] [Tex Dawson] added {[High Evolutionary][d5RsBzSlTo2lO90AEp9LoQ][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[High Evolutionary][d5RsBzSlTo2lO90AEp9LoQ][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:33:09,853][INFO ][cluster.service          ] [Tex Dawson] removed {[High Evolutionary][d5RsBzSlTo2lO90AEp9LoQ][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([High Evolutionary][d5RsBzSlTo2lO90AEp9LoQ][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 18:34:05,193][INFO ][cluster.service          ] [Tex Dawson] added {[Kamal][YJa-McDeSQagaKxoJ3Ahxg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Kamal][YJa-McDeSQagaKxoJ3Ahxg][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:39:03,906][INFO ][cluster.service          ] [Tex Dawson] removed {[Kamal][YJa-McDeSQagaKxoJ3Ahxg][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Kamal][YJa-McDeSQagaKxoJ3Ahxg][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 18:39:53,854][INFO ][cluster.service          ] [Tex Dawson] added {[Apache Kid][dFR6siC7RgWXPIeZOMKtAw][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Apache Kid][dFR6siC7RgWXPIeZOMKtAw][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:43:49,055][INFO ][cluster.service          ] [Tex Dawson] removed {[Apache Kid][dFR6siC7RgWXPIeZOMKtAw][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Apache Kid][dFR6siC7RgWXPIeZOMKtAw][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 18:45:06,058][INFO ][cluster.service          ] [Tex Dawson] added {[Cagliostro][f0BgLNw8RIyfH_3Ff6zb2A][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Cagliostro][f0BgLNw8RIyfH_3Ff6zb2A][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 18:46:14,644][INFO ][monitor.jvm              ] [Tex Dawson] [gc][young][6677][22] duration [772ms], collections [1]/[997ms], total [772ms]/[1.6s], memory [206.9mb]->[142.3mb]/[990.7mb], all_pools {[young] [68.2mb]->[3.3mb]/[266.2mb]}{[survivor] [8.4mb]->[3.9mb]/[33.2mb]}{[old] [130.1mb]->[135mb]/[691.2mb]}
+[2015-04-17 18:58:56,701][INFO ][monitor.jvm              ] [Tex Dawson] [gc][young][7424][30] duration [731ms], collections [1]/[1.4s], total [731ms]/[2.7s], memory [206mb]->[138.7mb]/[990.7mb], all_pools {[young] [67.8mb]->[116.8kb]/[266.2mb]}{[survivor] [2.8mb]->[3mb]/[33.2mb]}{[old] [135.3mb]->[135.5mb]/[691.2mb]}
+[2015-04-17 19:10:13,908][INFO ][cluster.service          ] [Tex Dawson] removed {[Cagliostro][f0BgLNw8RIyfH_3Ff6zb2A][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Cagliostro][f0BgLNw8RIyfH_3Ff6zb2A][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 19:11:31,645][INFO ][cluster.service          ] [Tex Dawson] added {[Warren III Worthington][1VpgpZ-oR2mxt5-WnnqMOQ][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Warren III Worthington][1VpgpZ-oR2mxt5-WnnqMOQ][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 19:19:15,456][INFO ][cluster.service          ] [Tex Dawson] removed {[Warren III Worthington][1VpgpZ-oR2mxt5-WnnqMOQ][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-node_failed([Warren III Worthington][1VpgpZ-oR2mxt5-WnnqMOQ][QA40][inet[/10.130.133.14:9301]]), reason transport disconnected
+[2015-04-17 19:20:15,142][INFO ][cluster.service          ] [Tex Dawson] added {[Stick][Wvk5anj8T26xWnLWeen24A][QA40][inet[/10.130.133.14:9301]],}, reason: zen-disco-receive(join from node[[Stick][Wvk5anj8T26xWnLWeen24A][QA40][inet[/10.130.133.14:9301]]])
+[2015-04-17 21:33:34,227][WARN ][monitor.jvm              ] [Tex Dawson] [gc][young][16614][45] duration [2.5s], collections [1]/[2.9s], total [2.5s]/[6.2s], memory [206.9mb]->[138.7mb]/[990.7mb], all_pools {[young] [68.3mb]->[275.5kb]/[266.2mb]}{[survivor] [590.4kb]->[200.1kb]/[33.2mb]}{[old] [138mb]->[138.2mb]/[691.2mb]}

@@ -1,0 +1,562 @@
+[2015-04-13 00:40:45,594][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-15972-2170][YkGYmhDKTd6VK_yhHHAs2w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-15972-2170][YkGYmhDKTd6VK_yhHHAs2w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:40:51,217][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 00:40:52,840][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 00:45:00,183][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-15972-2170][YkGYmhDKTd6VK_yhHHAs2w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-15972-2170][YkGYmhDKTd6VK_yhHHAs2w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:47:54,236][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-22588-2170][xYTbk698Q2WjjhQNBfDIGg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-22588-2170][xYTbk698Q2WjjhQNBfDIGg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:50:06,108][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-22588-2170][xYTbk698Q2WjjhQNBfDIGg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-22588-2170][xYTbk698Q2WjjhQNBfDIGg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:53:44,895][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-10664-2170][2Xj_r_jIR8ur2W1sdoPrgA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-10664-2170][2Xj_r_jIR8ur2W1sdoPrgA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:54:16,276][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-10664-2170][2Xj_r_jIR8ur2W1sdoPrgA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-10664-2170][2Xj_r_jIR8ur2W1sdoPrgA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:54:38,827][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-11508-2170][t20PartyRxyCQrKekMtV3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-11508-2170][t20PartyRxyCQrKekMtV3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:55:31,876][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-11508-2170][t20PartyRxyCQrKekMtV3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-11508-2170][t20PartyRxyCQrKekMtV3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:55:54,099][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-11484-2170][ZbN5fS1hRxC-5xLfl3WhJQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-11484-2170][ZbN5fS1hRxC-5xLfl3WhJQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:56:39,864][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-11484-2170][ZbN5fS1hRxC-5xLfl3WhJQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-11484-2170][ZbN5fS1hRxC-5xLfl3WhJQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:56:59,985][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-22092-2170][1SxVf3XiRkKKBhAt1cdFjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-22092-2170][1SxVf3XiRkKKBhAt1cdFjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:57:17,309][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-22092-2170][1SxVf3XiRkKKBhAt1cdFjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-22092-2170][1SxVf3XiRkKKBhAt1cdFjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 00:57:44,863][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-10048-2170][X6Np0mOsRNqQ3iTnD9KWdw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-10048-2170][X6Np0mOsRNqQ3iTnD9KWdw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 00:58:17,593][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-10048-2170][X6Np0mOsRNqQ3iTnD9KWdw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-10048-2170][X6Np0mOsRNqQ3iTnD9KWdw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:00:38,915][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-15200-2170][YwZJxQhsQpKBIQWk-IhCoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-15200-2170][YwZJxQhsQpKBIQWk-IhCoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:01:06,740][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-15200-2170][YwZJxQhsQpKBIQWk-IhCoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-15200-2170][YwZJxQhsQpKBIQWk-IhCoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:09:43,919][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-9912-4008][03gw58ehRiKSZlJETJ7N7Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-9912-4008][03gw58ehRiKSZlJETJ7N7Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:10:49,044][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-9912-4008][03gw58ehRiKSZlJETJ7N7Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-9912-4008][03gw58ehRiKSZlJETJ7N7Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:11:12,876][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-17948-4010][JlvoDBPwRLeAoL5gV6gPLw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-17948-4010][JlvoDBPwRLeAoL5gV6gPLw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:12:28,804][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-17948-4010][JlvoDBPwRLeAoL5gV6gPLw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-17948-4010][JlvoDBPwRLeAoL5gV6gPLw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:12:50,787][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-7404-4010][76UbB9y2Rd6j2fyYkIIE-g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-7404-4010][76UbB9y2Rd6j2fyYkIIE-g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:13:29,246][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-7404-4010][76UbB9y2Rd6j2fyYkIIE-g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-7404-4010][76UbB9y2Rd6j2fyYkIIE-g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:13:50,239][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-23360-4010][HXXvYBrDRxuCmjAFqHRJDQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-23360-4010][HXXvYBrDRxuCmjAFqHRJDQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:15:16,605][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-23360-4010][HXXvYBrDRxuCmjAFqHRJDQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-23360-4010][HXXvYBrDRxuCmjAFqHRJDQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:19:58,848][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-9316-4010][FhQDMVEPSAeVDSOG5aDsPw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-9316-4010][FhQDMVEPSAeVDSOG5aDsPw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:24:38,314][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-9316-4010][FhQDMVEPSAeVDSOG5aDsPw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-9316-4010][FhQDMVEPSAeVDSOG5aDsPw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:25:05,233][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-6808-4010][CNLRIVV_RhuvGgsi2xYOjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-6808-4010][CNLRIVV_RhuvGgsi2xYOjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:27:19,799][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-6808-4010][CNLRIVV_RhuvGgsi2xYOjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-6808-4010][CNLRIVV_RhuvGgsi2xYOjg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:28:34,679][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-21140-4008][Hp0MIwACSxCWiQnykmkkKA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-21140-4008][Hp0MIwACSxCWiQnykmkkKA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:28:45,209][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-21140-4008][Hp0MIwACSxCWiQnykmkkKA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-21140-4008][Hp0MIwACSxCWiQnykmkkKA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:31:08,206][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-16956-4008][ITQcERYATGSCe88Sa1cHIw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-16956-4008][ITQcERYATGSCe88Sa1cHIw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:32:35,309][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 01:33:13,519][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-16956-4008][ITQcERYATGSCe88Sa1cHIw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-16956-4008][ITQcERYATGSCe88Sa1cHIw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:33:35,851][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-18916-4010][LJqLY4qhQxmj7L7dYzmMBw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-18916-4010][LJqLY4qhQxmj7L7dYzmMBw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:35:21,100][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-18916-4010][LJqLY4qhQxmj7L7dYzmMBw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-18916-4010][LJqLY4qhQxmj7L7dYzmMBw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:35:43,522][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-5668-4010][r18mkj_1Seau9QHpoVVxug][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-5668-4010][r18mkj_1Seau9QHpoVVxug][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:36:22,820][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-5668-4010][r18mkj_1Seau9QHpoVVxug][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-5668-4010][r18mkj_1Seau9QHpoVVxug][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:36:46,245][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-5924-4010][z0QgYSjQS8qgvq-kKqLMDg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-5924-4010][z0QgYSjQS8qgvq-kKqLMDg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:39:43,929][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-5924-4010][z0QgYSjQS8qgvq-kKqLMDg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-5924-4010][z0QgYSjQS8qgvq-kKqLMDg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:41:05,356][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-3560-4010][iT9MbCAxSe2Iio7CHx7RsQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-3560-4010][iT9MbCAxSe2Iio7CHx7RsQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:42:54,415][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-3560-4010][iT9MbCAxSe2Iio7CHx7RsQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-3560-4010][iT9MbCAxSe2Iio7CHx7RsQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:43:16,238][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-19528-4010][oTvsr4ZTQiqEbdBfJaRINA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-19528-4010][oTvsr4ZTQiqEbdBfJaRINA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:55:59,539][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-19528-4010][oTvsr4ZTQiqEbdBfJaRINA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-19528-4010][oTvsr4ZTQiqEbdBfJaRINA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:56:22,023][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-6500-4010][YJv3pV9oTVaSdxP34rqgkQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-6500-4010][YJv3pV9oTVaSdxP34rqgkQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 01:58:32,522][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-6500-4010][YJv3pV9oTVaSdxP34rqgkQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-6500-4010][YJv3pV9oTVaSdxP34rqgkQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 01:58:53,346][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-13116-4010][KCZUIyCcSB2KVQP5TYLVtA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-13116-4010][KCZUIyCcSB2KVQP5TYLVtA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:00:49,292][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-13116-4010][KCZUIyCcSB2KVQP5TYLVtA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-13116-4010][KCZUIyCcSB2KVQP5TYLVtA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:01:11,036][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-8012-4010][nJgOrrQsTLq0KAC3nYMuoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-8012-4010][nJgOrrQsTLq0KAC3nYMuoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:01:53,753][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-8012-4010][nJgOrrQsTLq0KAC3nYMuoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-8012-4010][nJgOrrQsTLq0KAC3nYMuoQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:02:15,499][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-8400-4010][R4Jf-3dqSuaV9Dzx3Vv04g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-8400-4010][R4Jf-3dqSuaV9Dzx3Vv04g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:08:55,596][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-8400-4010][R4Jf-3dqSuaV9Dzx3Vv04g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-8400-4010][R4Jf-3dqSuaV9Dzx3Vv04g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:09:17,734][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-19548-4010][cbRxwv38RjSnKzFfAGA4CQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-19548-4010][cbRxwv38RjSnKzFfAGA4CQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:17:54,649][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-19548-4010][cbRxwv38RjSnKzFfAGA4CQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-19548-4010][cbRxwv38RjSnKzFfAGA4CQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:18:15,373][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-1132-4008][PzZQIC5qT-Oik0k91DTp4g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-1132-4008][PzZQIC5qT-Oik0k91DTp4g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:22:55,960][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-1132-4008][PzZQIC5qT-Oik0k91DTp4g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-1132-4008][PzZQIC5qT-Oik0k91DTp4g][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:23:30,563][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-24168-4008][pdh_PA33RGaIAfXNrb2TRA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-24168-4008][pdh_PA33RGaIAfXNrb2TRA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:33:14,070][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-24168-4008][pdh_PA33RGaIAfXNrb2TRA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-24168-4008][pdh_PA33RGaIAfXNrb2TRA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:33:37,104][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-6588-4010][HS_QQndPSoyZFHTf5osZtQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-6588-4010][HS_QQndPSoyZFHTf5osZtQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:35:33,371][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-6588-4010][HS_QQndPSoyZFHTf5osZtQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-6588-4010][HS_QQndPSoyZFHTf5osZtQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:35:54,723][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-22020-4010][Tq1SOu_IRVaJIzlogFbacw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-22020-4010][Tq1SOu_IRVaJIzlogFbacw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:42:08,113][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-22020-4010][Tq1SOu_IRVaJIzlogFbacw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-22020-4010][Tq1SOu_IRVaJIzlogFbacw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:42:29,108][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-19956-4008][tYNv43P6TXGg2liKHWdZ5w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-19956-4008][tYNv43P6TXGg2liKHWdZ5w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:43:18,273][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-19956-4008][tYNv43P6TXGg2liKHWdZ5w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-19956-4008][tYNv43P6TXGg2liKHWdZ5w][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:44:08,530][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-14968-4010][4y7EyAx5SGaXOaqcA77MZw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-14968-4010][4y7EyAx5SGaXOaqcA77MZw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:45:55,711][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-14968-4010][4y7EyAx5SGaXOaqcA77MZw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-14968-4010][4y7EyAx5SGaXOaqcA77MZw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:46:19,489][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-10620-4010][1WPB4d7HRoSIYY4JBef16Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-10620-4010][1WPB4d7HRoSIYY4JBef16Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:47:39,895][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-10620-4010][1WPB4d7HRoSIYY4JBef16Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-10620-4010][1WPB4d7HRoSIYY4JBef16Q][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:48:36,947][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-18724-4010][1NONgjWhSQ6xRp7SoKdkzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-18724-4010][1NONgjWhSQ6xRp7SoKdkzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:49:26,666][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-18724-4010][1NONgjWhSQ6xRp7SoKdkzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-18724-4010][1NONgjWhSQ6xRp7SoKdkzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:49:49,253][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-11588-4010][vgNe8VLkRA6HMWcWVB8_dw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-11588-4010][vgNe8VLkRA6HMWcWVB8_dw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:49:50,349][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-11588-4010][vgNe8VLkRA6HMWcWVB8_dw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-11588-4010][vgNe8VLkRA6HMWcWVB8_dw][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:50:44,931][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-23400-4010][pVBRt9XlRP6f5KqM8pxuag][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-23400-4010][pVBRt9XlRP6f5KqM8pxuag][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:53:19,943][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-23400-4010][pVBRt9XlRP6f5KqM8pxuag][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-23400-4010][pVBRt9XlRP6f5KqM8pxuag][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:53:42,415][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-18676-4010][0V89jzE7S9SH4q0CeXPFUg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-18676-4010][0V89jzE7S9SH4q0CeXPFUg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:55:29,610][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-18676-4010][0V89jzE7S9SH4q0CeXPFUg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-18676-4010][0V89jzE7S9SH4q0CeXPFUg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:56:02,188][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-5676-4010][Ukw2jygxQm-X5TI6-MjUeQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-5676-4010][Ukw2jygxQm-X5TI6-MjUeQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:57:07,548][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-5676-4010][Ukw2jygxQm-X5TI6-MjUeQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-5676-4010][Ukw2jygxQm-X5TI6-MjUeQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 02:57:28,622][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-6348-4010][CpYiQOTkQn2HC70RMyBQ3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-6348-4010][CpYiQOTkQn2HC70RMyBQ3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 02:59:49,786][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 03:00:13,486][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-6348-4010][CpYiQOTkQn2HC70RMyBQ3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-6348-4010][CpYiQOTkQn2HC70RMyBQ3A][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 03:00:36,130][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-10752-4010][TYhpoyfTSE2n8DaSm4fthA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-10752-4010][TYhpoyfTSE2n8DaSm4fthA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 03:00:53,812][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-10752-4010][TYhpoyfTSE2n8DaSm4fthA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-10752-4010][TYhpoyfTSE2n8DaSm4fthA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 03:01:26,240][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-15316-4010][JAD9u3S0T2-3hZ4Nibi-zA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-15316-4010][JAD9u3S0T2-3hZ4Nibi-zA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 03:05:38,323][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-15316-4010][JAD9u3S0T2-3hZ4Nibi-zA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-15316-4010][JAD9u3S0T2-3hZ4Nibi-zA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 03:06:03,684][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-18808-4010][JjrQXzWfRDCuBol0bTKmyA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-18808-4010][JjrQXzWfRDCuBol0bTKmyA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 03:08:03,479][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-18808-4010][JjrQXzWfRDCuBol0bTKmyA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-18808-4010][JjrQXzWfRDCuBol0bTKmyA][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 03:11:15,276][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291288][158710] duration [1.3s], collections [1]/[2.2s], total [1.3s]/[45.3m], memory [363.1mb]->[254mb]/[990.7mb], all_pools {[young] [116mb]->[224.8kb]/[266.2mb]}{[survivor] [10mb]->[16.4mb]/[33.2mb]}{[old] [237mb]->[237.3mb]/[691.2mb]}
+[2015-04-13 03:11:53,464][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291325][158719] duration [1.2s], collections [1]/[2s], total [1.2s]/[45.3m], memory [374.4mb]->[262.6mb]/[990.7mb], all_pools {[young] [121.1mb]->[8.5mb]/[266.2mb]}{[survivor] [8mb]->[8.4mb]/[33.2mb]}{[old] [245.2mb]->[245.7mb]/[691.2mb]}
+[2015-04-13 03:12:15,292][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291342][158723] duration [1.2s], collections [1]/[1.6s], total [1.2s]/[45.4m], memory [351.1mb]->[258.6mb]/[990.7mb], all_pools {[young] [94.7mb]->[40.2kb]/[266.2mb]}{[survivor] [9.7mb]->[11.1mb]/[33.2mb]}{[old] [246.7mb]->[247.4mb]/[691.2mb]}
+[2015-04-13 03:12:45,975][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291369][158730] duration [2s], collections [1]/[4.4s], total [2s]/[45.4m], memory [394mb]->[327.1mb]/[990.7mb], all_pools {[young] [132mb]->[66.3mb]/[266.2mb]}{[survivor] [12.8mb]->[11.3mb]/[33.2mb]}{[old] [249.2mb]->[249.4mb]/[691.2mb]}
+[2015-04-13 03:12:56,009][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291378][158732] duration [1.1s], collections [1]/[2s], total [1.1s]/[45.5m], memory [366.1mb]->[281.6mb]/[990.7mb], all_pools {[young] [106.9mb]->[23.7mb]/[266.2mb]}{[survivor] [9.3mb]->[7.6mb]/[33.2mb]}{[old] [249.8mb]->[250.1mb]/[691.2mb]}
+[2015-04-13 03:13:03,826][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][291385][158734] duration [884ms], collections [1]/[1.4s], total [884ms]/[45.5m], memory [389.1mb]->[258.4mb]/[990.7mb], all_pools {[young] [129.8mb]->[291.3kb]/[266.2mb]}{[survivor] [8.9mb]->[7.5mb]/[33.2mb]}{[old] [250.3mb]->[250.5mb]/[691.2mb]}
+[2015-04-13 03:15:15,571][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][291514][158762] duration [1.1s], collections [1]/[1.5s], total [1.1s]/[45.6m], memory [289.3mb]->[163.8mb]/[990.7mb], all_pools {[young] [125.2mb]->[243.2kb]/[266.2mb]}{[survivor] [9.6mb]->[8.9mb]/[33.2mb]}{[old] [154.4mb]->[154.7mb]/[691.2mb]}
+[2015-04-13 03:21:10,101][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-4132-4010][umcYXiywQiij2dzoaE5yzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-4132-4010][umcYXiywQiij2dzoaE5yzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 03:21:51,872][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-4132-4010][umcYXiywQiij2dzoaE5yzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-4132-4010][umcYXiywQiij2dzoaE5yzg][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 03:22:12,852][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-12312-4010][iX0hkfERSzKErtm7L015wQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-12312-4010][iX0hkfERSzKErtm7L015wQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 03:23:31,444][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-12312-4010][iX0hkfERSzKErtm7L015wQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-12312-4010][iX0hkfERSzKErtm7L015wQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 09:30:46,611][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-13 09:30:46,627][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-13 09:30:46,756][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-13 09:30:46,756][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-13 09:30:46,785][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-13 09:30:47,609][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-13 09:30:47,609][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-13 09:31:41,652][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-13 09:31:41,652][WARN ][river.twitter            ] [Chi Demon] [twitter][twitter_river] stream failure, restarting stream...
+Stream closed.
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=a8fd061d or
+	http://www.google.co.jp/search?q=0007e765
+TwitterException{exceptionCode=[a8fd061d-0007e765 a8fd061d-0007e6ec], statusCode=-1, message=null, code=-1, retryAfter=-1, rateLimitStatus=null, version=4.0.3}
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:196)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:537)
+Caused by: javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:557)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:927)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:884)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:102)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:552)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3053)
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:238)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:116)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:75)
+	... 2 more
+[2015-04-13 09:31:41,653][INFO ][twitter4j.TwitterStreamImpl] Stream closed.
+[2015-04-13 09:31:41,654][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-13 09:31:41,655][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-13 09:31:42,079][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-13 09:31:42,079][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-13 11:05:12,080][INFO ][cluster.metadata         ] [Chi Demon] [[_river]] remove_mapping [[twitter_river]]
+[2015-04-13 11:05:12,105][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] closing twitter stream river
+[2015-04-13 11:52:23,818][INFO ][cluster.service          ] [Chi Demon] added {[logstash-QA40-15300-4010][uWURSmbJTB6kI94ubPR_vQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-QA40-15300-4010][uWURSmbJTB6kI94ubPR_vQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}])
+[2015-04-13 13:41:27,687][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-2439-4008][X9uiGmF3RTWZE3WSbS1rgQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-2439-4008][X9uiGmF3RTWZE3WSbS1rgQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 13:44:27,533][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 13:44:28,770][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 13:45:33,173][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 13:45:46,537][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-2439-4008][X9uiGmF3RTWZE3WSbS1rgQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-2439-4008][X9uiGmF3RTWZE3WSbS1rgQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 13:47:58,117][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-QA40-15300-4010][uWURSmbJTB6kI94ubPR_vQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-QA40-15300-4010][uWURSmbJTB6kI94ubPR_vQ][QA40][inet[/10.130.133.14:9301]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 13:48:10,409][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-2991-4010][uar9bA6-QTyK7iLiJrpcpQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-2991-4010][uar9bA6-QTyK7iLiJrpcpQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 13:48:12,091][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 13:48:12,414][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 13:48:12,660][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 13:49:57,881][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 13:50:12,587][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-2991-4010][uar9bA6-QTyK7iLiJrpcpQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-2991-4010][uar9bA6-QTyK7iLiJrpcpQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 13:53:27,674][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-3446-4008][Zl-2Yf72RfGhopxwE-COMw][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-3446-4008][Zl-2Yf72RfGhopxwE-COMw][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 13:53:28,898][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 13:53:29,155][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 13:54:56,926][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 13:55:28,190][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-3446-4008][Zl-2Yf72RfGhopxwE-COMw][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-3446-4008][Zl-2Yf72RfGhopxwE-COMw][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 13:56:22,983][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-3505-4008][gqTEQ3iLR2S4hbgPa2GvrQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-3505-4008][gqTEQ3iLR2S4hbgPa2GvrQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 13:56:24,243][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 13:56:24,644][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 13:56:24,679][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 14:46:11,396][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-3505-4008][gqTEQ3iLR2S4hbgPa2GvrQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-3505-4008][gqTEQ3iLR2S4hbgPa2GvrQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 14:46:56,492][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 14:48:37,950][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-8062-4008][c5_OtIKXRTyTng45i3UovQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-8062-4008][c5_OtIKXRTyTng45i3UovQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 14:48:39,317][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 14:48:39,755][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 14:51:04,405][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-8062-4008][c5_OtIKXRTyTng45i3UovQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-8062-4008][c5_OtIKXRTyTng45i3UovQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 14:51:37,325][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-8443-4008][K40NvW38Qj2B64xvi6pKpA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-8443-4008][K40NvW38Qj2B64xvi6pKpA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 14:52:28,124][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-8443-4008][K40NvW38Qj2B64xvi6pKpA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-8443-4008][K40NvW38Qj2B64xvi6pKpA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 14:58:25,850][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-8966-4008][0RGigih8Tvy_LvtH3Vj-tQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-8966-4008][0RGigih8Tvy_LvtH3Vj-tQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 14:58:27,183][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 15:00:30,118][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 15:00:49,534][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-8966-4008][0RGigih8Tvy_LvtH3Vj-tQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-8966-4008][0RGigih8Tvy_LvtH3Vj-tQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 15:03:33,007][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-9439-4008][cIIngnlnR-uJQohXPLcDZQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-9439-4008][cIIngnlnR-uJQohXPLcDZQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 15:06:47,697][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-9439-4008][cIIngnlnR-uJQohXPLcDZQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-9439-4008][cIIngnlnR-uJQohXPLcDZQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 15:07:14,363][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-9896-4008][VOzOa0_JTzKpBK1060hGJg][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-9896-4008][VOzOa0_JTzKpBK1060hGJg][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 15:07:46,873][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-9896-4008][VOzOa0_JTzKpBK1060hGJg][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-9896-4008][VOzOa0_JTzKpBK1060hGJg][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 15:08:15,852][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-9948-4008][6xoUDpwxS-2cVj1zItyvJQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-9948-4008][6xoUDpwxS-2cVj1zItyvJQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 15:08:17,130][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 15:08:17,385][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 15:20:46,277][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 15:21:53,427][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-9948-4008][6xoUDpwxS-2cVj1zItyvJQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-9948-4008][6xoUDpwxS-2cVj1zItyvJQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 16:05:11,552][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-18612-4008][9I_3xiQbT1qpfV2F22JZSA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-18612-4008][9I_3xiQbT1qpfV2F22JZSA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 16:05:12,868][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2015-04-13 16:05:13,222][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 16:07:33,347][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-18612-4008][9I_3xiQbT1qpfV2F22JZSA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-18612-4008][9I_3xiQbT1qpfV2F22JZSA][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 16:09:57,125][INFO ][cluster.service          ] [Chi Demon] added {[logstash-gcvs4199-19118-4008][r49u0R7TTo-_-KjGncBZmQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-gcvs4199-19118-4008][r49u0R7TTo-_-KjGncBZmQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}])
+[2015-04-13 16:09:58,781][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] update_mapping [fast-esp] (dynamic)
+[2015-04-13 16:10:18,637][INFO ][cluster.service          ] [Chi Demon] removed {[logstash-gcvs4199-19118-4008][r49u0R7TTo-_-KjGncBZmQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-gcvs4199-19118-4008][r49u0R7TTo-_-KjGncBZmQ][gcvs4199][inet[/10.131.82.199:9300]]{client=true, data=false}), reason transport disconnected
+[2015-04-13 17:14:40,384][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][341784][166985] duration [1.1s], collections [1]/[1.5s], total [1.1s]/[47.5m], memory [347.6mb]->[214.4mb]/[990.7mb], all_pools {[young] [132mb]->[315.4kb]/[266.2mb]}{[survivor] [6.4mb]->[4.2mb]/[33.2mb]}{[old] [209.2mb]->[209.8mb]/[691.2mb]}
+[2015-04-13 17:23:23,661][INFO ][cluster.metadata         ] [Chi Demon] [fast-esp] deleting index
+[2015-04-13 18:00:40,157][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][344537][166986] duration [2.4s], collections [1]/[4s], total [2.4s]/[47.6m], memory [345.4mb]->[214.2mb]/[990.7mb], all_pools {[young] [131.3mb]->[631.5kb]/[266.2mb]}{[survivor] [4.2mb]->[3.7mb]/[33.2mb]}{[old] [209.8mb]->[209.9mb]/[691.2mb]}
+[2015-04-13 19:12:48,916][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][348856][166987] duration [3.6s], collections [1]/[5.2s], total [3.6s]/[47.6m], memory [345.6mb]->[213mb]/[990.7mb], all_pools {[young] [132mb]->[390.7kb]/[266.2mb]}{[survivor] [3.7mb]->[2.1mb]/[33.2mb]}{[old] [209.9mb]->[210.4mb]/[691.2mb]}
+[2015-04-13 19:36:14,036][INFO ][node                     ] [Chi Demon] stopping ...
+[2015-04-13 19:36:59,112][WARN ][indices                  ] [Chi Demon] Not all shards are closed yet, waited 30sec - stopping service
+[2015-04-13 19:36:59,113][INFO ][node                     ] [Chi Demon] stopped
+[2015-04-13 19:36:59,163][INFO ][node                     ] [Chi Demon] closing ...
+[2015-04-13 19:37:02,506][INFO ][node                     ] [Chi Demon] closed
+[2015-04-13 19:51:03,270][INFO ][node                     ] [Jennifer Kale] version[1.5.1], pid[22440], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 19:51:03,271][INFO ][node                     ] [Jennifer Kale] initializing ...
+[2015-04-13 19:51:03,361][INFO ][plugins                  ] [Jennifer Kale] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 19:51:04,951][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.StringRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 19:51:31,282][INFO ][node                     ] [Anelle] version[1.5.1], pid[13752], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 19:51:31,283][INFO ][node                     ] [Anelle] initializing ...
+[2015-04-13 19:51:31,298][INFO ][plugins                  ] [Anelle] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 19:51:32,081][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.StringRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 19:56:16,343][INFO ][node                     ] [Ororo Munroe] version[1.5.1], pid[19212], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 19:56:16,344][INFO ][node                     ] [Ororo Munroe] initializing ...
+[2015-04-13 19:56:16,358][INFO ][plugins                  ] [Ororo Munroe] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 19:56:17,157][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.StringRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 19:57:16,155][INFO ][node                     ] [Asmodeus] version[1.5.1], pid[17828], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 19:57:16,156][INFO ][node                     ] [Asmodeus] initializing ...
+[2015-04-13 19:57:16,177][INFO ][plugins                  ] [Asmodeus] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 19:57:16,945][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/StringRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.StringRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 19:58:42,453][INFO ][node                     ] [Alfie O'Meggan] version[1.5.1], pid[2568], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 19:58:42,454][INFO ][node                     ] [Alfie O'Meggan] initializing ...
+[2015-04-13 19:58:42,464][INFO ][plugins                  ] [Alfie O'Meggan] loaded [river-twitter], sites []
+[2015-04-13 19:58:48,582][INFO ][node                     ] [Alfie O'Meggan] initialized
+[2015-04-13 19:58:48,703][INFO ][node                     ] [Alfie O'Meggan] starting ...
+[2015-04-13 19:58:49,172][INFO ][transport                ] [Alfie O'Meggan] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-13 19:58:49,396][INFO ][discovery                ] [Alfie O'Meggan] elasticsearch/WPEceJiXRvyq-mWT-y8dOg
+[2015-04-13 19:58:53,197][INFO ][cluster.service          ] [Alfie O'Meggan] new_master [Alfie O'Meggan][WPEceJiXRvyq-mWT-y8dOg][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-13 19:58:53,286][INFO ][http                     ] [Alfie O'Meggan] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-13 19:58:53,287][INFO ][node                     ] [Alfie O'Meggan] started
+[2015-04-13 19:58:54,184][INFO ][gateway                  ] [Alfie O'Meggan] recovered [2] indices into cluster_state
+[2015-04-13 20:49:46,092][INFO ][node                     ] [Alfie O'Meggan] stopping ...
+[2015-04-13 20:49:46,274][INFO ][node                     ] [Alfie O'Meggan] stopped
+[2015-04-13 20:49:46,274][INFO ][node                     ] [Alfie O'Meggan] closing ...
+[2015-04-13 20:49:46,279][INFO ][node                     ] [Alfie O'Meggan] closed
+[2015-04-13 20:51:25,358][INFO ][node                     ] [Gorgon] version[1.5.1], pid[6048], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 20:51:25,359][INFO ][node                     ] [Gorgon] initializing ...
+[2015-04-13 20:51:25,390][INFO ][plugins                  ] [Gorgon] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 20:51:26,159][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/XContentThrowableRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/XContentThrowableRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.XContentThrowableRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 20:53:31,388][INFO ][node                     ] [Guardsman] version[1.5.1], pid[1368], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 20:53:31,389][INFO ][node                     ] [Guardsman] initializing ...
+[2015-04-13 20:53:31,412][INFO ][plugins                  ] [Guardsman] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 20:53:32,185][ERROR][bootstrap                ] Exception
+org.elasticsearch.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: org/elasticsearch/rest/XContentRestResponse
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2201)
+	at org.elasticsearch.common.cache.LocalCache.get(LocalCache.java:3937)
+	at org.elasticsearch.common.cache.LocalCache.getOrLoad(LocalCache.java:3941)
+	at org.elasticsearch.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4824)
+	at org.elasticsearch.common.inject.internal.FailableCache.get(FailableCache.java:51)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.get(ConstructorInjectorStore.java:50)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl.initialize(ConstructorBindingImpl.java:50)
+	at org.elasticsearch.common.inject.InjectorImpl.initializeBinding(InjectorImpl.java:372)
+	at org.elasticsearch.common.inject.BindingProcessor$1$1.run(BindingProcessor.java:148)
+	at org.elasticsearch.common.inject.BindingProcessor.initializeBindings(BindingProcessor.java:204)
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:119)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:102)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:203)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:70)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:213)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:32)
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/rest/XContentRestResponse
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2532)
+	at java.lang.Class.getDeclaredConstructors(Class.java:1901)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forConstructorOf(InjectionPoint.java:177)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.createConstructor(ConstructorInjectorStore.java:59)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore.access$000(ConstructorInjectorStore.java:29)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:37)
+	at org.elasticsearch.common.inject.ConstructorInjectorStore$1.create(ConstructorInjectorStore.java:33)
+	at org.elasticsearch.common.inject.internal.FailableCache$1.load(FailableCache.java:39)
+	at org.elasticsearch.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3527)
+	at org.elasticsearch.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2319)
+	at org.elasticsearch.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2282)
+	at org.elasticsearch.common.cache.LocalCache$Segment.get(LocalCache.java:2197)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.rest.XContentRestResponse
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 32 more
+[2015-04-13 21:14:14,747][INFO ][node                     ] [Watoomb] version[1.5.1], pid[7036], build[5e38401/2015-04-09T13:41:35Z]
+[2015-04-13 21:14:14,747][INFO ][node                     ] [Watoomb] initializing ...
+[2015-04-13 21:14:14,765][INFO ][plugins                  ] [Watoomb] loaded [river-twitter, example-plugin], sites []
+[2015-04-13 21:14:18,405][INFO ][node                     ] [Watoomb] initialized
+[2015-04-13 21:14:18,464][INFO ][node                     ] [Watoomb] starting ...
+[2015-04-13 21:14:18,617][INFO ][transport                ] [Watoomb] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.130.133.14:9300]}
+[2015-04-13 21:14:18,678][INFO ][discovery                ] [Watoomb] elasticsearch/xGvEVZsVTR-Tbc39XHT5Gg
+[2015-04-13 21:14:22,456][INFO ][cluster.service          ] [Watoomb] new_master [Watoomb][xGvEVZsVTR-Tbc39XHT5Gg][QA40][inet[/10.130.133.14:9300]], reason: zen-disco-join (elected_as_master)
+[2015-04-13 21:14:22,521][INFO ][http                     ] [Watoomb] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.130.133.14:9200]}
+[2015-04-13 21:14:22,522][INFO ][node                     ] [Watoomb] started
+[2015-04-13 21:14:23,179][INFO ][gateway                  ] [Watoomb] recovered [2] indices into cluster_state

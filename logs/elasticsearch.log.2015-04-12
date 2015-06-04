@@ -1,0 +1,831 @@
+[2015-04-12 02:15:39,673][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][201858][116575] duration [1.2s], collections [1]/[1.5s], total [1.2s]/[36.3m], memory [204.3mb]->[150.1mb]/[990.7mb], all_pools {[young] [56.7mb]->[236.9kb]/[266.2mb]}{[survivor] [8.5mb]->[8.2mb]/[33.2mb]}{[old] [139mb]->[141.7mb]/[691.2mb]}
+[2015-04-12 11:30:47,699][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][235106][136264] duration [1.4s], collections [1]/[2.7s], total [1.4s]/[39.7m], memory [243.9mb]->[220.1mb]/[990.7mb], all_pools {[young] [26.9mb]->[498.1kb]/[266.2mb]}{[survivor] [5.4mb]->[7.8mb]/[33.2mb]}{[old] [211.5mb]->[211.8mb]/[691.2mb]}
+[2015-04-12 11:30:52,891][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][235110][136266] duration [1.6s], collections [1]/[1.9s], total [1.6s]/[39.7m], memory [265.9mb]->[223.2mb]/[990.7mb], all_pools {[young] [46.9mb]->[177.1kb]/[266.2mb]}{[survivor] [6.1mb]->[7.9mb]/[33.2mb]}{[old] [212.8mb]->[215.1mb]/[691.2mb]}
+[2015-04-12 11:37:24,361][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][235495][136731] duration [2.1s], collections [1]/[3.5s], total [2.1s]/[39.8m], memory [255.1mb]->[239.2mb]/[990.7mb], all_pools {[young] [45.6mb]->[26.8mb]/[266.2mb]}{[survivor] [6.5mb]->[8.5mb]/[33.2mb]}{[old] [203mb]->[203.9mb]/[691.2mb]}
+[2015-04-12 12:37:10,380][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][239070][139207] duration [2.6s], collections [1]/[2.7s], total [2.6s]/[40.3m], memory [261.1mb]->[219.8mb]/[990.7mb], all_pools {[young] [44mb]->[151kb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [208.5mb]->[211.2mb]/[691.2mb]}
+[2015-04-12 13:34:51,423][INFO ][cluster.metadata         ] [Chi Demon] [[_river]] remove_mapping [[twitter_river]]
+[2015-04-12 13:34:51,657][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] closing twitter stream river
+[2015-04-12 13:36:54,646][INFO ][cluster.metadata         ] [Chi Demon] [_river] update_mapping [twitter_river] (dynamic)
+[2015-04-12 13:36:55,176][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] creating twitter stream river
+[2015-04-12 13:36:55,337][INFO ][river.twitter            ] [Chi Demon] [twitter][twitter_river] starting sample twitter stream
+[2015-04-12 13:36:55,556][INFO ][twitter4j.TwitterStreamImpl] Establishing connection.
+[2015-04-12 13:36:55,668][INFO ][cluster.metadata         ] [Chi Demon] [_river] update_mapping [twitter_river] (dynamic)
+[2015-04-12 13:36:56,376][INFO ][twitter4j.TwitterStreamImpl] Connection established.
+[2015-04-12 13:36:56,377][INFO ][twitter4j.TwitterStreamImpl] Receiving status stream.
+[2015-04-12 13:52:15,206][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][243535][142140] duration [1s], collections [1]/[1.9s], total [1s]/[41m], memory [179.5mb]->[187.6mb]/[990.7mb], all_pools {[young] [15mb]->[18.4mb]/[266.2mb]}{[survivor] [8.5mb]->[8.5mb]/[33.2mb]}{[old] [155.9mb]->[160.7mb]/[691.2mb]}
+[2015-04-12 13:52:16,517][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][243536][142141] duration [999ms], collections [1]/[1.3s], total [999ms]/[41m], memory [187.6mb]->[175.6mb]/[990.7mb], all_pools {[young] [18.4mb]->[3.8mb]/[266.2mb]}{[survivor] [8.5mb]->[7.8mb]/[33.2mb]}{[old] [160.7mb]->[163.9mb]/[691.2mb]}
+[2015-04-12 14:05:27,459][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][2], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b181ab5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:27,460][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b181ab5]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:27,669][DEBUG][action.search.type       ] [Chi Demon] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:27,460][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][1], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b181ab5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:27,460][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][3], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b181ab5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:27,459][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][4], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2b181ab5] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,103][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][2], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@11f58c41] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,104][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][3], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@11f58c41]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,158][DEBUG][action.search.type       ] [Chi Demon] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,104][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][4], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@11f58c41] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,103][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@11f58c41] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:44,103][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][1], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@11f58c41] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }},
+        { "_score": { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,687][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7fca3f47] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,691][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][2], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7fca3f47]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,692][DEBUG][action.search.type       ] [Chi Demon] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,691][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][3], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7fca3f47] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,690][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][4], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7fca3f47] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:05:54,687][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][1], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7fca3f47] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "_source": ["text", "user.name"],
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,059][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][2], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2343ccde] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][2]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,061][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][1], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2343ccde] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][1]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,060][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][0], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2343ccde] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][0]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,060][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][4], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2343ccde]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,063][DEBUG][action.search.type       ] [Chi Demon] All shards failed for phase: [query]
+org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][4]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 14:06:05,060][DEBUG][action.search.type       ] [Chi Demon] [twitter_river][3], node[aZY9XW3rQs-chOdwi96OEg], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@2343ccde] lastShard [true]
+org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [Failed to parse source [{
+
+    "min_score": 1.0,
+    "query": {
+        "bool": {
+          "must": [
+            { "match": { "language":  "en" }},
+            { "match": { "text": "Obama" }}
+          ]
+        }
+    },
+    "sort": [
+        { "date":   { "order": "desc" }}
+    ]
+}
+]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:721)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:557)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:529)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:291)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:231)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:228)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:559)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.search.SearchParseException: [twitter_river][3]: query[+language:en +text:obama],from[-1],size[-1]: Parse Failure [No mapping found for [date] in order to sort on]
+	at org.elasticsearch.search.sort.SortParseElement.addSortField(SortParseElement.java:214)
+	at org.elasticsearch.search.sort.SortParseElement.addCompoundSortField(SortParseElement.java:188)
+	at org.elasticsearch.search.sort.SortParseElement.parse(SortParseElement.java:86)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:705)
+	... 9 more
+[2015-04-12 17:08:16,689][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][255255][148505] duration [2s], collections [1]/[3.7s], total [2s]/[42.4m], memory [294.6mb]->[185.2mb]/[990.7mb], all_pools {[young] [125.5mb]->[11.5mb]/[266.2mb]}{[survivor] [8.1mb]->[12.7mb]/[33.2mb]}{[old] [160.8mb]->[160.9mb]/[691.2mb]}
+[2015-04-12 17:10:40,700][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][255392][148582] duration [1.6s], collections [1]/[1.9s], total [1.6s]/[42.4m], memory [318.9mb]->[217.5mb]/[990.7mb], all_pools {[young] [111.1mb]->[395kb]/[266.2mb]}{[survivor] [16.4mb]->[12.3mb]/[33.2mb]}{[old] [191.4mb]->[204.8mb]/[691.2mb]}
+[2015-04-12 21:51:30,891][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][272180][153599] duration [1.7s], collections [1]/[2.3s], total [1.7s]/[43.6m], memory [273.7mb]->[175.2mb]/[990.7mb], all_pools {[young] [106mb]->[631.8kb]/[266.2mb]}{[survivor] [7.5mb]->[14.6mb]/[33.2mb]}{[old] [160.1mb]->[160.3mb]/[691.2mb]}
+[2015-04-12 21:51:40,861][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][272184][153600] duration [2.3s], collections [1]/[4.3s], total [2.3s]/[43.7m], memory [296mb]->[194.7mb]/[990.7mb], all_pools {[young] [120.9mb]->[15.3mb]/[266.2mb]}{[survivor] [14.6mb]->[16.3mb]/[33.2mb]}{[old] [160.3mb]->[163mb]/[691.2mb]}
+[2015-04-12 21:51:42,675][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][272185][153601] duration [791ms], collections [1]/[1.8s], total [791ms]/[43.7m], memory [194.7mb]->[193.1mb]/[990.7mb], all_pools {[young] [15.3mb]->[16.9mb]/[266.2mb]}{[survivor] [16.3mb]->[11.7mb]/[33.2mb]}{[old] [163mb]->[164.4mb]/[691.2mb]}
+[2015-04-12 21:54:41,247][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][272354][153663] duration [1.9s], collections [1]/[2.9s], total [1.9s]/[43.7m], memory [310.2mb]->[197.4mb]/[990.7mb], all_pools {[young] [118.1mb]->[3.4mb]/[266.2mb]}{[survivor] [10.9mb]->[12.3mb]/[33.2mb]}{[old] [181.2mb]->[181.5mb]/[691.2mb]}
+[2015-04-12 22:35:47,761][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][274812][154390] duration [1.6s], collections [1]/[3.7s], total [1.6s]/[44.1m], memory [357mb]->[261.8mb]/[990.7mb], all_pools {[young] [103.5mb]->[2.2mb]/[266.2mb]}{[survivor] [7.2mb]->[13.1mb]/[33.2mb]}{[old] [246.2mb]->[246.4mb]/[691.2mb]}
+[2015-04-12 22:36:01,006][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][274820][154391] duration [2.4s], collections [1]/[4.9s], total [2.4s]/[44.1m], memory [373.9mb]->[269.1mb]/[990.7mb], all_pools {[young] [114.3mb]->[4.4mb]/[266.2mb]}{[survivor] [13.1mb]->[16.4mb]/[33.2mb]}{[old] [246.4mb]->[248.2mb]/[691.2mb]}
+[2015-04-12 22:36:08,176][WARN ][monitor.jvm              ] [Chi Demon] [gc][young][274824][154392] duration [2.4s], collections [1]/[2.7s], total [2.4s]/[44.2m], memory [369.7mb]->[268.8mb]/[990.7mb], all_pools {[young] [105mb]->[444.5kb]/[266.2mb]}{[survivor] [16.4mb]->[16.4mb]/[33.2mb]}{[old] [248.2mb]->[251.9mb]/[691.2mb]}
+[2015-04-12 22:36:21,498][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][274833][154395] duration [820ms], collections [1]/[1s], total [820ms]/[44.2m], memory [291.6mb]->[218.1mb]/[990.7mb], all_pools {[young] [124.1mb]->[50.9mb]/[266.2mb]}{[survivor] [16.4mb]->[12.6mb]/[33.2mb]}{[old] [151.1mb]->[154.5mb]/[691.2mb]}
+[2015-04-12 23:17:13,904][INFO ][monitor.jvm              ] [Chi Demon] [gc][young][277279][155123] duration [840ms], collections [1]/[1.4s], total [840ms]/[44.4m], memory [331.9mb]->[222.5mb]/[990.7mb], all_pools {[young] [114.8mb]->[835kb]/[266.2mb]}{[survivor] [7.1mb]->[11.9mb]/[33.2mb]}{[old] [209.9mb]->[210mb]/[691.2mb]}
